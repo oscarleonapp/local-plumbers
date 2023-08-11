@@ -11,6 +11,7 @@
 body {
     font-size: 62.5%;
     max-width: 1200px;
+    min-width: 320px;
     margin: 0 auto;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
@@ -33,6 +34,11 @@ a {
     margin-left: 30px;
     justify-self: start;
     align-self: center;
+}
+
+.disponible-247 h2 {
+    font-size: 1rem;
+    color: #333;
 }
 
 .social-container {
