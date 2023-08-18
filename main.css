@@ -32,8 +32,12 @@ a {
 
 /* ========== HEADER ========== */
 
-header{
+.navbar-section{
     background-color: #001F3F;
+}
+
+.navbar-section .separador{
+    height: 10px;
 }
 
 .container-barra-encabezado {
