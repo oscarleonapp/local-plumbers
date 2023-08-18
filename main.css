@@ -175,10 +175,16 @@ ul{
 
 /*========== LAYOUT ==========*/
 .bd-container{
-  max-width: 968px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  /* max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
-  margin-right: var(--mb-3);
+  margin-right: var(--mb-3); */
 }
 
 .l-header{
@@ -215,19 +221,14 @@ ul{
 }
 
 
-.nav_toggle i{
+.nav_toggle{
   color: var(--color-destacado);
-  font-weight: 1.5rem;
+  font-weight: 1rem;
 }
 
 .nav_logo{
     font-size: 1rem;
     color: var(--color-destacado);
-}
-
-.nav_toggle{
-  font-size: 1.2rem;
-  cursor: pointer;
 }
 
 .nav_item{
@@ -276,7 +277,7 @@ ul{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background-color: #FF5100;
+  /* background-color: #FF5100; */
   border-radius: .4rem;
   z-index: 10;
   transition: .4s;
@@ -285,8 +286,8 @@ ul{
 }
 
 .scrolltop_icon{
-  font-size: 1.8rem;
-  color: #fff;
+  font-size: 2rem;
+  color: var(--color-destacado);
 }
 
 
