@@ -10,6 +10,7 @@
     --color-fondo: #FFFFFF;        /* Blanco Clásico */
     --color-secundario: #4CAF50;   /* Verde Hierba */
     --color-texto: #808080;        /* Gris Acero */
+    --color-destacado2: #FFD700;    /* Amarillo Dorado */
     --color-destacado: #DC4900;    /* Amarillo Dorado */
     --color-urgente: #8B0000;      /* Rojo Oscuro */
     --color-enlace: #00BFFF;       /* Azul Agua */
@@ -88,7 +89,7 @@ a {
 
 .disponible-247 h2 {
     font-size: 1rem;
-    color: #fff;
+    color: var(--color-destacado2);
 }
 
 .disponible-247 span{
@@ -110,7 +111,7 @@ a {
 }
 
 .logo-container{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     display: grid;
@@ -123,6 +124,7 @@ a {
 
 .img-container img{
     width: 200px;
+    margin-bottom: 20px;
 }
 
 .call-action{
@@ -309,7 +311,7 @@ ul{
 }
 
 .scrolltop_icon{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--color-destacado);
 }
 
@@ -331,8 +333,7 @@ ul{
     margin-right: auto;
   }
 
-  .l-header,
-  .scrolltop{
+  .l-header{
     display: none;
   }
 
