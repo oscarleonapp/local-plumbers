@@ -115,7 +115,6 @@ header{
   --body-color: #FCFCFC;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -185,7 +184,7 @@ ul{
     background-color: #FF5100;
     box-shadow: 0 -1px 4px rgba(0,0,0,.1);
     border-radius: 1rem 1rem 0 0;
-    z-index: var(--z-fixed);
+    z-index: 100;
     transition: .3s;
   }
 }
@@ -215,7 +214,7 @@ ul{
   display: flex;
   flex-direction: column;
   font-size: var(--smaller-font-size);
-  color:var(--text-color-light);
+  color:var(--container-color);
   font-weight: var(--font-medium);
 }
 
@@ -249,7 +248,7 @@ ul{
   padding: .3rem;
   background-color: #FF5100;
   border-radius: .4rem;
-  z-index: 100;
+  z-index: 10;
   transition: .4s;
   bottom: 5rem;
   /* visibility: hidden; */
