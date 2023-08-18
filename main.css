@@ -86,23 +86,250 @@ header{
     justify-content: center;
 }
 
-.call-action .btn-book{
-    background-color: #FF5100;
-    width: 100%;
+.call-action button{
     height: 30px;
-    color: #fff;
+    background-color: #FF5100;
     padding: 3px;
     border-radius: 3px;
-    border: 1px #333 solid;
+    border: none;
+    cursor: pointer;
 }
 
-.call-action .btn-tel{
-    background-color: #FF5100;
-    width: 100%;
-    height: 30px;
+.call-action button a{
     color: #fff;
-    padding: 3px;
-    border-radius: 3px;
-    border: 1px #333 solid;
-    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* EXTRA CSS */
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  
+  /*========== Colors ==========*/
+  --title-color: #141d2b;
+  --text-color: #403A3A;
+  --text-color-light: #707070;
+  --container-color: #FAFAFA;
+  --container-color-alt: #F0EFEF;
+  --body-color: #FCFCFC;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== BASE ==========*/
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+/*========== LAYOUT ==========*/
+.bd-container{
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.l-header{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+  box-shadow: 0 -1px 4px rgba(0,0,0,.1);
+  transition: .3s;
+}
+/*========== NAV ==========*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 968px){
+  .nav_menu{
+    position: fixed;
+    bottom: -100%; /*var(--header-height)*/
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: #FF5100;
+    box-shadow: 0 -1px 4px rgba(0,0,0,.1);
+    border-radius: 1rem 1rem 0 0;
+    z-index: var(--z-fixed);
+    transition: .3s;
+  }
+}
+
+.nav_logo,
+.nav_toggle{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav_toggle{
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav_item{
+  text-align: center;
+}
+
+.nav_list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav_link{
+  display: flex;
+  flex-direction: column;
+  font-size: var(--smaller-font-size);
+  color:var(--text-color-light);
+  font-weight: var(--font-medium);
+}
+
+.nav_link:hover{
+  color: var(--title-color);
+}
+
+.nav_icon{
+  font-size: 1.2rem;
+  margin-bottom: var(--mb-1);
+}
+/* Show menu */
+.show-menu{
+  bottom: var(--header-height);
+}
+
+/* Active menu link */
+.active-link{
+  color: var(--title-color);
+}
+
+
+/* Scroll top */
+.scrolltop{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background-color: #FF5100;
+  border-radius: .4rem;
+  z-index: 100;
+  transition: .4s;
+  bottom: 5rem;
+  /* visibility: hidden; */
+}
+
+.scrolltop_icon{
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices, menu two columns */
+@media screen and (max-width: 320px) {
+  .nav_list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem .5rem;
+  }
+}
+
+/* Classes modified for large screen size */
+@media screen and (min-width: 968px){
+  body{
+    margin: 3rem 0;
+  }
+
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .l-header,
+  .scrolltop{
+    display: none;
+  }
+
+  .resume{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13,12,12,.15);
+  }
+
+  .resume_left{
+    background-color: var(--container-color-alt);
+  }
+
+  .resume_left,
+  .resume_right{
+    padding: 0 1.5rem;
+  }
+
+  .generate-pdf{
+    display: inline-block;
+  }
+
+  .section-title,
+  .profile_description{
+    text-align: initial;
+  }
+
+  .home_container{
+    gap: 1.5rem;
+  }
+
+  .home_button-movil{
+    display: none;
+  }
+
+  .references_container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languages_content{
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3.5rem;
+  }
+
+  .interests_container{
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3.5rem;
+  }
 }

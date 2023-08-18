@@ -15,6 +15,10 @@
         rel="stylesheet">
     <!-- GOOGLE FONT END -->
 
+    <script src="main.js" defer></script>
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
 </head>
 
@@ -35,9 +39,8 @@
         <section class="logo-container">
             <div class="img-container"><img src="source/logo.png" alt=""></div>
             <div class="call-action">
-                <a href="#" class="btn-book">Book an apoinment today!</a>
-                <a href="#" class="btn-tel">(855) 505-6225</a>
-            </div>
+                <button><a href="#" class="btn-book"><span>Book an apoinment today!</span></a></button>
+                <button><a href="#" class="btn-tel"><span>(855) 505-6225</span></a></button>
         </section>
         <!-- <section class="navBar-container">
             <nav>
@@ -50,6 +53,70 @@
             </nav>
         </section> -->
     </header>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">LOCAL PLUMBERS</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="bx bx-home nav_icon"></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#profile" class="nav_link">
+                            <i class="bx bx-user nav_icon"></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#education" class="nav_link">
+                            <i class="bx bx-book nav_icon"></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="bx bx-receipt nav_icon"></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#experience" class="nav_link">
+                            <i class="bx bx-briefcase-alt nav_icon"></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#certificates" class="nav_link">
+                            <i class="bx bx-award nav_icon"></i>Certificates
+                        </a>
+                    </li>
+
+
+                    <li class="nav_item">
+                        <a href="#references" class="nav_link">
+                            <i class="bx bx-link-external nav_icon"></i>References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-chat scrolltop_icon"></i>
+    </a>
 </body>
 
 </html>
