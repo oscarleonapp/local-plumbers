@@ -175,17 +175,44 @@ ul{
 
 /*========== LAYOUT ==========*/
 .bd-container{
+    height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
     justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
+    text-align: center;
   /* max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3); */
 }
+
+
+
+.nav_toggle{
+    display: grid;
+    align-self: center;
+    justify-self: end;
+    font-size: 1.4rem;
+    color: var(--color-destacado);
+}
+
+
+.logo-plumbers{
+    display: grid;
+    align-self: start;
+    justify-self: start;
+    font-size: 1rem;
+    color: var(--color-destacado);
+}
+
+.logo-plumbers a{
+    color: var(--color-destacado);
+    font-weight: 500;
+}
+
 
 .l-header{
   width: 100%;
@@ -198,12 +225,12 @@ ul{
   transition: .3s;
 }
 /*========== NAV ==========*/
-.nav{
+/* .nav{
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 @media screen and (max-width: 968px){
   .nav_menu{
@@ -221,15 +248,11 @@ ul{
 }
 
 
-.nav_toggle{
+/* .nav_toggle{
   color: var(--color-destacado);
   font-weight: 1rem;
-}
+} */
 
-.nav_logo{
-    font-size: 1rem;
-    color: var(--color-destacado);
-}
 
 .nav_item{
   text-align: center;
@@ -313,50 +336,4 @@ ul{
     display: none;
   }
 
-  .resume{
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(13,12,12,.15);
-  }
-
-  .resume_left{
-    background-color: var(--container-color-alt);
-  }
-
-  .resume_left,
-  .resume_right{
-    padding: 0 1.5rem;
-  }
-
-  .generate-pdf{
-    display: inline-block;
-  }
-
-  .section-title,
-  .profile_description{
-    text-align: initial;
-  }
-
-  .home_container{
-    gap: 1.5rem;
-  }
-
-  .home_button-movil{
-    display: none;
-  }
-
-  .references_container{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .languages_content{
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
-  }
-
-  .interests_container{
-    grid-template-columns: repeat(4, max-content);
-    column-gap: 3.5rem;
-  }
 }
