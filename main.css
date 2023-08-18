@@ -25,7 +25,7 @@ a {
 /* ========== HEADER ========== */
 
 header{
-    background-color: #fff;
+    background-color: #141d2b;
 }
 
 .container-barra-encabezado {
@@ -45,7 +45,7 @@ header{
 
 .disponible-247 h2 {
     font-size: 1rem;
-    color: #333;
+    color: #fff;
 }
 
 .social-container {
