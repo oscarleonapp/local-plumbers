@@ -6,6 +6,13 @@
 
 :root {
     --principal-color: #FF5100;
+    --color-primario: #001F3F;     /* Azul Marino Profundo */
+    --color-fondo: #FFFFFF;        /* Blanco Clásico */
+    --color-secundario: #4CAF50;   /* Verde Hierba */
+    --color-texto: #808080;        /* Gris Acero */
+    --color-destacado: #FFD700;    /* Amarillo Dorado */
+    --color-urgente: #8B0000;      /* Rojo Oscuro */
+    --color-enlace: #00BFFF;       /* Azul Agua */
 }
 
 body {
@@ -14,7 +21,8 @@ body {
     min-width: 320px;
     margin: 0 auto;
     font-family: 'Bricolage Grotesque', sans-serif;
-    background-color: antiquewhite;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
 a {
@@ -25,7 +33,7 @@ a {
 /* ========== HEADER ========== */
 
 header{
-    background-color: #141d2b;
+    background-color: #001F3F;
 }
 
 .container-barra-encabezado {
@@ -56,8 +64,9 @@ header{
     align-items: center;
 }
 
-.social-item img {
-    width: 28px;
+.social-item i {
+    font-size: 1.5rem;
+    color: #F0EFEF;
     cursor: pointer;
 }
 
