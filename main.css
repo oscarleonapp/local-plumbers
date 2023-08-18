@@ -10,7 +10,7 @@
     --color-fondo: #FFFFFF;        /* Blanco Clásico */
     --color-secundario: #4CAF50;   /* Verde Hierba */
     --color-texto: #808080;        /* Gris Acero */
-    --color-destacado: #FFD700;    /* Amarillo Dorado */
+    --color-destacado: #DC4900;    /* Amarillo Dorado */
     --color-urgente: #8B0000;      /* Rojo Oscuro */
     --color-enlace: #00BFFF;       /* Azul Agua */
 }
@@ -87,27 +87,37 @@ header{
 }
 
 .call-action{
-    height: 40px;
+    height: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
     align-content: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
-.call-action button{
-    height: 30px;
-    background-color: #FF5100;
-    padding: 3px;
+.call-action .cta-btn{
+    display: grid;
+    background-color: var(--color-destacado);
+    height: 40px;
     border-radius: 3px;
-    border: none;
-    cursor: pointer;
+    align-items: center;
+    border: 1px solid var(--color-destacado);
 }
 
-.call-action button a{
-    color: #fff;
-    text-transform: uppercase;
+.call-action .cta-btn a{
+    color: var(--body-color);
+    font-size: .8rem;
 }
+
+.call-action .cta-btn i{
+    color: var(--body-color);
+    margin-top: 2px;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+}
+
 
 /* EXTRA CSS */
 
@@ -198,10 +208,15 @@ ul{
   }
 }
 
-.nav_logo,
-.nav_toggle{
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+
+.nav_toggle i{
+  color: var(--color-destacado);
+  font-weight: 1.5rem;
+}
+
+.nav_logo{
+    font-size: 1rem;
+    color: var(--color-destacado);
 }
 
 .nav_toggle{
