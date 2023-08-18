@@ -58,6 +58,7 @@ header{
 
 .social-item img {
     width: 28px;
+    cursor: pointer;
 }
 
 .logo-container{
@@ -76,10 +77,32 @@ header{
     width: 200px;
 }
 
-.call-action .btn{
+.call-action{
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    align-content: center;
+    justify-content: center;
+}
+
+.call-action .btn-book{
     background-color: #FF5100;
+    width: 100%;
+    height: 30px;
     color: #fff;
     padding: 3px;
     border-radius: 3px;
     border: 1px #333 solid;
+}
+
+.call-action .btn-tel{
+    background-color: #FF5100;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px #333 solid;
+    cursor: pointer;
 }
