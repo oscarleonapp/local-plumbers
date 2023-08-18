@@ -14,11 +14,18 @@ body {
     min-width: 320px;
     margin: 0 auto;
     font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: antiquewhite;
 }
 
 a {
     text-decoration: none;
     color: #333;
+}
+
+/* ========== HEADER ========== */
+
+header{
+    background-color: #fff;
 }
 
 .container-barra-encabezado {
@@ -31,7 +38,7 @@ a {
 }
 
 .disponible-247 {
-    margin-left: 30px;
+    margin-left: 20px;
     justify-self: start;
     align-self: center;
 }
@@ -42,7 +49,7 @@ a {
 }
 
 .social-container {
-    margin-right: 30px;
+    margin-right: 20px;
     display: grid;
     grid-template-columns: repeat(4, 40px);
     justify-content: end;
@@ -51,4 +58,28 @@ a {
 
 .social-item img {
     width: 28px;
+}
+
+.logo-container{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.img-container img{
+    width: 200px;
+}
+
+.call-action .btn{
+    background-color: #FF5100;
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px #333 solid;
 }
