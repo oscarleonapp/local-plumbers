@@ -49,7 +49,7 @@
 
 body {
     font-size: 62.5%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     min-width: 320px;
     margin: 0 auto;
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -65,7 +65,7 @@ a {
 /* ========== HEADER ========== */
 
 .navbar-section{
-    background-color: #333;
+    background-color: #0f0d0d;
 }
 
 .navbar-section .separador{
@@ -89,7 +89,7 @@ a {
 
 .disponible-247 h2 {
     font-size: 1rem;
-    color: var(--color-destacado2);
+    color: var(--body-color);
 }
 
 .disponible-247 span{
@@ -313,6 +313,51 @@ ul{
 .scrolltop_icon{
   font-size: 2.5rem;
   color: var(--color-destacado);
+}
+
+/* VIDEO BACKGROUND */
+
+.video-background {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-align: center;
+}
+
+.content h2{
+  font-size: 5rem;
+}
+
+.services-container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.services-container h2{
+  font-size: 1.5rem;
+}
+
+.footer{
+  margin-bottom: 120px;
 }
 
 
