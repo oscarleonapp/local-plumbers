@@ -9,11 +9,11 @@
     --color-primario: #001F3F;     /* Azul Marino Profundo */
     --color-fondo: #FFFFFF;        /* Blanco Clásico */
     --color-secundario: #4CAF50;   /* Verde Hierba */
-    --color-texto: #808080;        /* Gris Acero */
+    --color-texto: #333333;        /* Gris Acero */
     --color-destacado2: #FFD700;    /* Amarillo Dorado */
     --color-destacado: #DC4900;    /* Amarillo Dorado */
-    --color-urgente: #8B0000;      /* Rojo Oscuro */
-    --color-enlace: #00BFFF;       /* Azul Agua */
+    --color-urgente: #D80000;      /* Rojo Oscuro */
+    --color-enlace: #0074E1;       /* Azul Agua */
 
     --header-height: 3rem;
   
@@ -53,32 +53,35 @@ body {
     min-width: 320px;
     margin: 0 auto;
     font-family: 'Bricolage Grotesque', sans-serif;
-    background-color: var(--color-fondo);
+    background-color: #FAFAFA;
     color: var(--color-texto);
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #151515;
 }
 
 /* ========== HEADER ========== */
 
 .navbar-section{
-    background-color: #0f0d0d;
+    background-color: #FFFFFF;
 }
-
+/* 
 .navbar-section .separador{
     height: 10px;
-}
+    background-color: #DC4900;
+} */
 
 .container-barra-encabezado {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 40px;
+    grid-auto-rows: 70px;
     /* padding: 10px; */
     justify-content: center;
     align-content: center;
+    background-color: #00385C;
+    border-bottom: #FFFFFF 1px solid;
 }
 
 .disponible-247 {
@@ -93,7 +96,7 @@ a {
 }
 
 .disponible-247 span{
-    color: var(--color-destacado);
+    color: var(--color-destacado2);
 }
 
 .social-container {
@@ -106,12 +109,16 @@ a {
 
 .social-item i {
     font-size: 1.5rem;
-    color: var(--color-fondo);
+    /* background: #F27000; */
     cursor: pointer;
+    color: #fff;
+    /* border: #FFFFFF solid 1px; */
+    padding: 2px;
+    border-radius: 50%;
 }
 
 .logo-container{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     display: grid;
@@ -123,40 +130,35 @@ a {
 }
 
 .img-container img{
-    width: 200px;
-    margin-bottom: 20px;
+  position: relative;
+    width: 220px;
+    top: 30px;
+    z-index: 3;
 }
 
 .call-action{
+    width: 100%;
     height: 45px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
     align-content: center;
-    justify-content: center;
+    justify-content: end;
     margin-bottom: 10px;
 }
 
-.call-action .cta-btn{
-    display: grid;
-    background-color: var(--color-destacado);
-    height: 40px;
-    border-radius: 3px;
-    align-items: center;
-    border: 1px solid var(--color-destacado);
+.buttons-container{
+  margin-right: 40px;
 }
 
-.call-action .cta-btn a{
-    color: var(--body-color);
-    font-size: .8rem;
-}
-
-.call-action .cta-btn i{
-    color: var(--body-color);
-    margin-top: 2px;
-    font-size: 1rem;
-    display: grid;
-    align-items: center;
+button{
+  border: 1px solid #F27000;
+  background: #F27000;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  flex-basis: 50%;
+  text-align: center;
+  /* border: #F0EFEF 1px solid; */
 }
 
 
@@ -333,18 +335,26 @@ ul{
 }
 
 .content {
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
   position: absolute;
+  display: grid;
+  height: 500px;
+  align-content: center;
+  justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  text-align: center;
 }
 
 .content h2{
   font-size: 5rem;
 }
+
+/* SERVICES */
 
 .services-container{
   display: grid;
@@ -354,12 +364,26 @@ ul{
 
 .services-container h2{
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.all-services-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.service1{
+  height: 40px;
+  width: 120px;
 }
 
 .footer{
   margin-bottom: 120px;
 }
-
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
