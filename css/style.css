@@ -9744,11 +9744,20 @@ h6,
 .btn-lg-square {
   width: 46px;
   height: 46px;
+  /* font-size: 1rem; */
 }
+
+.btn-lg-square-home {
+  width: 70px;
+  height: 46px;
+  /* font-size: 1rem; */
+}
+
 
 .btn-square,
 .btn-sm-square,
-.btn-lg-square {
+.btn-lg-square,
+.btn-lg-square-home {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -9758,8 +9767,9 @@ h6,
   position: fixed;
   display: none;
   right: 30px;
-  bottom: 30px;
+  bottom: 55px;
   z-index: 11;
+  /* font: 12px; */
 }
 
 .navbar-light .navbar-nav .nav-link {

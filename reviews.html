@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+
+
+    <style>
+        #map-plug {
+            display: none;
+        }
+
+        #google-reviews {
+            display: flex;
+            flex-wrap: wrap;
+            //display: grid;
+            //grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));
+        }
+
+        .review-item {
+            border: solid 1px rgba(190, 190, 190, .35);
+            margin: 0 auto;
+            padding: 1em;
+            flex: 1 1 20%;
+        }
+
+        @media (max-width:1200px) {
+            .review-item {
+                flex: 1 1 40%;
+            }
+        }
+
+        @media (max-width:450px) {
+            .review-item {
+                flex: 1 1 90%;
+            }
+        }
+
+        .review-meta,
+        .review-stars {
+            text-align: center;
+            font-size: 115%;
+        }
+
+        .review-author {
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        .review-date {
+            opacity: .6;
+            display: block;
+        }
+
+        .review-text {
+            line-height: 1.55;
+            text-align: left;
+            max-width: 32em;
+            margin: auto;
+        }
+
+
+
+        .review-stars ul {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .review-stars ul li {
+            float: left;
+            margin-right: 1px;
+            line-height: 1;
+        }
+
+        .review-stars ul li i {
+            color: #E4B248;
+            font-size: 1.4em;
+            font-style: normal;
+        }
+
+        .review-stars ul li i.inactive {
+            color: #c6c6c6;
+        }
+
+        .star:after {
+            content: "\2605";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="google-reviews"></div>
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/stevenmonson/googleReviews@6e8f0d794393ec657dab69eb1421f3a60add23ef/google-places.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC5MZ4gtAhicgH26xGaTJ9IbQA3yBMA9a0&signed_in=true&libraries=places"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $("#google-reviews").googlePlaces({
+                placeId: 'ChIJnd5sWG6PwoARR2mq7lj94g4' //Find placeID @: https://developers.google.com/places/place-id
+                , render: ['reviews']
+                , min_rating: 4
+                , max_rows: 4
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- API
+AIzaSyC5MZ4gtAhicgH26xGaTJ9IbQA3yBMA9a0
+-->
+
+<!-- Para dejar un reseña: 
+https://search.google.com/local/writereview?placeid=ChIJnd5sWG6PwoARR2mq7lj94g4
+-->
