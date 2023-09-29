@@ -261,6 +261,11 @@ select {
   word-wrap: normal;
 }
 
+    /* Estilo para ocultar el elemento por defecto */
+    #miElemento {
+      display: none;
+    }
+
 button,
 [type="button"],
 [type="reset"],

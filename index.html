@@ -943,7 +943,7 @@
     <!-- ESTRELLAS GOOGLE REVIEWS -->
 
     <!-- BOTON REVIEWS GOOGLE -->
-    <div class="rplg" style="" data-id="23409">
+    <div class="rplg " data-id="23409" onclick="mostrarOcultar()">
         <div
             class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        ">
             <div class="rplg-badge2" data-provider="google" style="display: block;">
@@ -953,7 +953,7 @@
                             <use xlink:href="#rp-logo-g"></use>
                         </svg></span>
                     <div class="rplg-badge2-score">
-                        <div> Google Rating </div>
+                        <div onclick="mostrarOcultar()"> Google Rating </div>
                         <div>
                             <div class="rplg-biz-rating rplg-trim rplg-biz-google">
                                 <div class="rplg-biz-score">5.0</div>
@@ -970,7 +970,7 @@
                                         <use xlink:href="#rp-star" fill="#fb8e28"></use>
                                     </svg></div>
                             </div>
-                            <div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 124
+                            <div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 96
                                     reviews</span></div>
                         </div>
                     </div>
@@ -980,12 +980,12 @@
             onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);"
             data-exec="true" data-func="rplg_init_badge_theme" data-args="" width="1" height="1" style="display:none">
     </div>
-    <iframe allow="join-ad-interest-group" data-tagging-id="AW-1068697454" data-load-time="1695410801847" height="0"
-        width="0" style="display: none; visibility: hidden;" src="btnreviews.html"></iframe>
+    <!-- <iframe allow="join-ad-interest-group" data-tagging-id="AW-1068697454" data-load-time="1695410801847" height="0"
+        width="0" style="display: none; visibility: hidden;" src="btnreviews.html"></iframe> -->
     <!-- BOTON REVIEWS GOOGLE FIN-->
 
     <!-- GOOGLE REVIEWS -->
-    <div class="rplg">
+    <div class="rplg" id="miElemento">
         <div class="rplg-form rplg-form-left" style="display: block;">
             <div class="rplg-form-head">
                 <div class="rplg-form-head-inner">
@@ -1014,8 +1014,7 @@
                             </div>
                         </div>
                     </div>
-                </div><button class="rplg-form-close" type="button"
-                    onclick="_rplg_get_parent(this, &#39;rplg-form&#39;).style.display=&#39;none&#39;">×</button>
+                </div><button class="rplg-form-close" type="button" onclick="mostrarOcultar()">×</button>
             </div>
             <div class="rplg-form-body"></div>
             <div class="rplg-form-content">
@@ -1147,6 +1146,21 @@
     <script src="js/scrollspy.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/mobile-menu.js"></script>
+    <script>
+        // Función para mostrar u ocultar el elemento
+        function mostrarOcultar() {
+            var elemento = document.getElementById("miElemento");
+
+            // Verificar si el elemento está visible
+            if (elemento.style.display === "none") {
+                // Si está oculto, mostrarlo
+                elemento.style.display = "block";
+            } else {
+                // Si está visible, ocultarlo
+                elemento.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
