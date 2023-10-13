@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="./src/bootstrap.min.css">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reviewstyle.css">
 
@@ -48,7 +49,22 @@
     <link href="css/css/aos.css" rel="stylesheet">
 
     <link href="css/css/templatemo-nomad-force.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+
+    <!-- NEW HEADER -->
+    <link rel="stylesheet" href="./src/app.css" type="text/css" media="all">
+
+    <script type="text/javascript" src="./src/jquery.min.js" id="jquery-core-js"></script>
+    <script type="text/javascript" src="./src/foundation.min.js"></script>
+    <script type="text/javascript" src="./src/app.js"></script>
+
+    <!-- NEW FOOTER -->
+    <!-- <link rel="stylesheet" href="./src/bootstrap.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="./src/style.css"> -->
+
+    <!-- NEW HEADER -->
+
     <style>
         ul {
             margin: 0px;
@@ -88,344 +104,221 @@
             font-size: 15px;
         }
 
-        .footer-content {
-            position: relative;
-            z-index: 2;
-        }
 
-        .footer-pattern img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 330px;
-            background-size: cover;
-            background-position: 100% 100%;
-        }
-
-        .footer-logo {
-            margin-bottom: 30px;
-        }
-
-        .footer-logo img {
-            max-width: 200px;
-        }
-
-        .footer-text p {
-            margin-bottom: 14px;
-            font-size: 14px;
-            color: #7e7e7e;
-            line-height: 28px;
-        }
-
-        .footer-social-icon span {
-            color: #fff;
-            display: block;
-            font-size: 20px;
-            font-weight: 700;
-            font-family: 'Poppins', sans-serif;
-            margin-bottom: 20px;
-        }
-
-        .footer-social-icon a {
-            color: #fff;
-            font-size: 16px;
-            margin-right: 15px;
-        }
-
-        .footer-social-icon i {
-            height: 40px;
-            width: 40px;
-            text-align: center;
-            line-height: 38px;
-            border-radius: 50%;
-        }
-
-        .facebook-bg {
-            background: #3B5998;
-        }
-
-        .twitter-bg {
-            background: #55ACEE;
-        }
-
-        .google-bg {
-            background: #DD4B39;
-        }
-
-        .footer-widget-heading h3 {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .footer-widget-heading h3::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -15px;
-            height: 2px;
-            width: 50px;
-            background: #ff5e14;
-        }
-
-        .footer-widget ul li {
+        /* NEW */
+        .svg-inline--fa {
             display: inline-block;
-            float: left;
-            width: 50%;
-            margin-bottom: 12px;
-        }
-
-        .footer-widget ul li a:hover {
-            color: #ff5e14;
-        }
-
-        .footer-widget ul li a {
-            color: #878787;
-            text-transform: capitalize;
-        }
-
-        .subscribe-form {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .subscribe-form input {
-            width: 100%;
-            padding: 14px 28px;
-            background: #2E2E2E;
-            border: 1px solid #2E2E2E;
-            color: #fff;
-        }
-
-        .subscribe-form button {
-            position: absolute;
-            right: 0;
-            background: #ff5e14;
-            padding: 13px 20px;
-            border: 1px solid #ff5e14;
-            top: 0;
-        }
-
-        .subscribe-form button i {
-            color: #fff;
-            font-size: 22px;
-            transform: rotate(-6deg);
-        }
-
-        .copyright-area {
-            background: #202020;
-            padding: 25px 0;
-        }
-
-        .copyright-text p {
-            margin: 0;
-            font-size: 14px;
-            color: #878787;
-        }
-
-        .copyright-text p a {
-            color: #ff5e14;
-        }
-
-        .footer-menu li {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        .footer-menu li:hover a {
-            color: #ff5e14;
-        }
-
-        .footer-menu li a {
-            font-size: 14px;
-            color: #878787;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em
         }
     </style>
 
 </head>
 
 <body>
-    <div class="container-fluid  background-color-nav">
-        <div class="row border-top px-xl-5  background-color-nav">
-            <div class="col-lg-3 d-none d-lg-block">
 
-            </div>
-            <div class="col-lg-9  background-color-nav">
-                <nav class="navbar navbar-expand-lg  py-3 py-lg-0 px-0  background-color-nav">
-                    <div class="collapse navbar-collapse justify-content-between  background-color-nav"
-                        id="navbarCollapse">
-                    </div>
-                    <div class="nav-item dropdown  background-color-nav">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Languaje</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Ingles</a>
-                            <a href="#" class="dropdown-item">Español</a>
-                        </div>
-                    </div>
-                    <a href="#"><i class="bi bi-facebook text-primary mr-3"></i></a>
-                    <a href="#"><i class="bi bi-instagram text-primary mr-3"></i></a>
-                    <a href="#"><i class="bi bi-yelp text-primary mr-3"></i></a>
-                    <a href="#"><i class="bi bi-youtube text-primary mr-3"></i></a>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar Start -->
-    <div class="container-fluid d-none d-lg-block background-color-nav">
-        <div class="row align-items-center py-4 px-xl-5">
-            <div class="col-lg-3">
-                <a href="" class="text-decoration-none">
-                    <!-- <h1 class="m-0"><span class="text-primary">Local </span>Plumbers</h1> -->
-                    <img src="img/logo-convertido.jpg" alt="Logo Local Plumbers" class="img-logo">
-                </a>
-            </div>
-            <!-- <div class="col-lg-3 text-right">
-                <div class="d-inline-flex align-items-center">
-                    <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                    <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1 text-white">Our Office</h6>
-                        <small>14967 Oswald St. Sylmar
-                            CA 91342, USA</small>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-3 text-right">
-                <div class="d-inline-flex align-items-center">
-                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-                    <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1 text-white">Email Us</h6>
-                        <small>info@localplumbersla.com</small>
-                    </div>
-                </div>
-            </div> -->
-            <div class="col-lg-3 text-right">
-                <div class="d-inline-flex align-items-center">
-                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
-                    <div class="text-left">
-                        <h6 class="font-weight-semi-bold mb-1 text-white"> 24/7 Emergency Service Available</h6>
-                        <small>855-505-6225</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+    <!-- NEW HEADER -->
+    <section id="header-container">
+
+        <section id="header">
+
+            <div class="show-for-large">
+
+                <header id="pageHeader">
+
+                    <div class="row">
+
+                        <div class="large-4 medium-3 small-8 columns logo">
+
+                            <a class="logo-tagline" href="#">
+
+                                <span>KickCharge Creative | kickcharge.com</span>
+                            </a>
+
+                        </div><!-- /.large-3 -->
+
+                        <div class="large-8 medium-9 small-4 columns menu-container">
+
+                            <div class="button-container">
+                                <a href="#" class="button quote-button"><span>Request a</span>Quote</a>
+                            </div><!-- /.button-container -->
+
+                            <svg class="svg-inline--fa fa-phone fa-w-16 show-for-small-only" aria-hidden="true"
+                                focusable="false" data-prefix="fa" data-icon="phone" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                                </path>
+                            </svg><!-- <i class="fa fa-phone show-for-small-only" aria-hidden="true"></i> -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid ">
-        <div class="row border-top px-xl-5">
-            <div class="col-lg-3 d-none d-lg-block">
-                <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
-                    data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
-                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>SERVICES</h5>
-                    <i class="fa fa-angle-down text-primary"></i>
-                </a>
-                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
-                    id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
-                    <div class="navbar-nav w-100">
-                        <!-- <a href="" class="nav-item nav-link">Camera inspection</a>
-                        <a href="" class="nav-item nav-link">Trenchless Pipe Bursting</a>
-                        <a href="" class="nav-item nav-link">Trenchless Pipe Lining</a>
-                        <a href="" class="nav-item nav-link">Pipe Descale</a> -->
-                        <a href="" class="nav-item nav-link">Drain cleaning</a>
-                        <a href="" class="nav-item nav-link">Water heater repair</a>
-                        <a href="" class="nav-item nav-link">Leak detection</a>
-                        <a href="" class="nav-item nav-link">Sewer repair</a>
+                            <nav id="top-menu">
+                                <!-- Primera Fila del NavBar -->
+                                <ul id="secondary-menu" class="menu dropdown" data-close-on-click-inside="false"
+                                    data-responsive-menu="accordion medium-dropdown" role="menubar"
+                                    data-dropdown-menu="rbgn4t-dropdown-menu">
+                                    <li id="menu-item-10370"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10370 is-dropdown-submenu-parent opens-right"
+                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
+                                        aria-label="Tips &amp; Tools"><a href="#" tabindex="0">Tips
+                                            &amp; Tools</a>
+                                        <ul class="sub-menu submenu is-dropdown-submenu first-sub vertical"
+                                            data-submenu="" aria-hidden="true" role="menu">
+
+                                            <li id="menu-item-13370"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13370 is-submenu-item is-dropdown-submenu-item"
+                                                role="menuitem"><a href="#">Opción 1</a>
+                                            </li>
+
+                                            <li id="menu-item-13370"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13370 is-submenu-item is-dropdown-submenu-item"
+                                                role="menuitem"><a href="#">Opción 2</a>
+                                            </li>
+
+                                            <li id="menu-item-13370"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13370 is-submenu-item is-dropdown-submenu-item"
+                                                role="menuitem"><a href="#">Opción 3</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-10371"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10371"
+                                        role="menuitem"><a href="#">Contact
+                                            Us</a>
+                                    </li>
+                                    <li id="menu-item-10372"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10372"
+                                        role="menuitem"><a href="tel:855-505-6225">+1 855-505-6225</a></li>
+                                </ul>
+                            </nav><!-- /#top-menu -->
+
+                            <nav id="main-menu">
+
+                                <ul id="primary-nav-container" class="menu dropdown" data-close-on-click-inside="false"
+                                    data-responsive-menu="accordion medium-dropdown" role="menubar"
+                                    data-dropdown-menu="mqh613-dropdown-menu">
+                                    <li id="menu-item-10360"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10360 level-0 is-dropdown-submenu-parent opens-right"
+                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
+                                        aria-label="Portfolio"><a href="#" tabindex="0">Portfolio</a>
+                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
+                                            aria-hidden="true" role="menu">
+                                            <div class="small-6 columns">
+                                                <li id="menu-item-14353"
+                                                    class="split menu-category show-for-large menu-item menu-item-type-custom menu-item-object-custom menu-item-14353 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                    role="menuitem"><a href="#">Categoria 1</a></li>
+                                                <li id="menu-item-12067"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12067 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                    role="menuitem"><a href="#">Opción 1</a></li>
+
+                                            </div>
+
+                                            <div class="small-6 columns">
+                                                <li id="menu-item-14354"
+                                                    class="split2 menu-category show-for-large menu-item menu-item-type-custom menu-item-object-custom menu-item-14354 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                    role="menuitem"><a href="#">Categoria
+                                                        2</a></li>
+                                                <li id="menu-item-14352"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14352 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                    role="menuitem"><a href="#">Opción 1</a>
+                                                </li>
+
+                                            </div>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-25742"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25742 level-0"
+                                        role="menuitem"><a href="#">Success Stories</a></li>
+                                    <li id="menu-item-10361"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10361 level-0 is-dropdown-submenu-parent opens-right"
+                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
+                                        aria-label="Capabilities"><a href="#">Capabilities</a>
+                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
+                                            aria-hidden="true" role="menu">
+                                            <li id="menu-item-12020"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12020 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                role="menuitem"><a href="#">Opción
+                                                    1</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-10362"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10362 level-0 is-dropdown-submenu-parent opens-right"
+                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
+                                        aria-label="Industries Served"><a href="#">Industries Served</a>
+                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
+                                            aria-hidden="true" role="menu">
+                                            <li id="menu-item-14047"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14047 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                role="menuitem"><a href="#">Opción 1</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-10363"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10363 level-0 is-dropdown-submenu-parent opens-right"
+                                        role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="About"><a
+                                            href="#">About</a>
+                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
+                                            aria-hidden="true" role="menu">
+                                            <li id="menu-item-14215"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14215 level-1 is-submenu-item is-dropdown-submenu-item"
+                                                role="menuitem"><a href="#">Opción 1</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav><!-- /#main-menu -->
+
+                        </div><!-- /.large-9 -->
+
+                    </div><!-- /.row -->
+
+                </header><!-- / #pageHeader -->
+
+            </div><!-- /.show-for-large -->
+
+            <div class="hide-for-large">
+
+                <div class="row">
+
+                    <div class="mobile-header">
+
+                        <span class="mobile-home"><a class="" href="#"></a></span>
+
+                        <div class="mobile-icons">
+
+                            <div class="button-container">
+                                <a href="#" class="button quote-button"><span>Request a</span>Quote</a>
+                            </div><!-- /.button-container -->
 
 
-                    </div>
-                </nav>
-            </div>
-            <div class="col-lg-9 ">
-                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 ">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
-                        <!-- <h1 class="m-0"><span class="text-primary">Local </span>Plumbers</h1> -->
-                        <img src="img/logo-convertido.jpg" alt="Logo Local Plumbers" class="img-logo">
-                    </a>
-                    <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav py-0">
-                            <!-- <a href="" class="nav-item nav-link active">Home</a> -->
-                            <!-- <a href="" class="nav-item nav-link">Drain cleaning</a> -->
-                            <!-- <a href="" class="nav-item nav-link">Water heater Repair</a> -->
-                            <!-- <a href="" class="nav-item nav-link">Leak Detection</a> -->
-                            <!-- <a href="" class="nav-item nav-link">Sewer Repair</a> -->
+                            <a href="tel:+19088359000"><svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true"
+                                    focusable="false" data-prefix="fa" data-icon="phone" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                                    </path>
+                                </svg><!-- <i class="fa fa-phone" aria-hidden="true"></i> --></a>
 
 
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Others</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="" class="dropdown-item">Water line Leak Repair</a>
-                                    <a href="" class="dropdown-item">Main Water Line</a>
-                                    <a href="" class="dropdown-item">Slab Leak Repair</a>
-                                    <a href="" class="dropdown-item">Kitchen Plumbing</a>
-                                    <a href="" class="dropdown-item">Dishwasher Installation</a>
-                                    <a href="" class="dropdown-item">Bathroom Plumbing</a>
-                                    <a href="" class="dropdown-item">Washer / Laundry Plumbing</a>
-                                </div>
-                            </div>
-                            <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
-                        </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Book an apoinment</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar End -->
+                        </div><!-- /.mobile-icons -->
 
-    <!-- Mobile NavBar -->
-    <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav_logo">Local Plumbers</a>
+                    </div><!-- /.mobile-header -->
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class="bx bx-home nav_icon"></i>Home
-                        </a>
-                    </li>
+                </div><!-- /.row -->
 
-                    <li class="nav_item">
-                        <a href="#profile" class="nav_link">
-                            <i class="bx bx-code-alt nav_icon"></i>Drain Cleaning
-                        </a>
-                    </li>
 
-                    <li class="nav_item">
-                        <a href="#education" class="nav_link">
-                            <i class="bx bx-code-alt nav_icon"></i>Water Heater Repair
-                        </a>
-                    </li>
+            </div><!-- / .hide-for-large -->
 
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class="bx bx-code-alt nav_icon"></i>Leak Detection
-                        </a>
-                    </li>
+        </section><!-- /#header -->
 
-                    <li class="nav_item">
-                        <a href="#experience" class="nav_link">
-                            <i class="bx bx-code-alt nav_icon"></i>Sewer Repair
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="nav_toggle" id="nav-toggle">
-                <i class="bx bx-grid-alt"></i>
-            </div>
-        </nav>
-    </header>
-    <!-- Mobile NavBar Fin -->
+    </section><!-- /#header-container -->
+    <!-- NEW HEADER -->
 
 
     <!-- Carousel Start -->
@@ -619,60 +512,9 @@
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/24hrs-plumber.jpg" alt="">
+                        <img class="img-fluid" src="img/PLUMBINGSERVICES​.webp" alt="" width="100">
                         <div class="bg-secondary p-4">
-                            <!-- <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                            </div> -->
-                            <a class="h5" href="">24-hour Emergency Plumber</a>
-                            <!-- <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
-                                    </h6>
-                                    <h5 class="m-0">$99</h5>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/PLUMBINGSERVICES​.webp" alt="">
-                        <div class="bg-secondary p-4">
-                            <!-- <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                            </div> -->
-                            <a class="h5" href="">Drain Clogged Pipe Cleaning​</a>
-                            <!-- <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
-                                    </h6>
-                                    <h5 class="m-0">$99</h5>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/PLUMBINGSERVICES​.webp" alt="">
-                        <div class="bg-secondary p-4">
-                            <!-- <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
-                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                            </div> -->
                             <a class="h5" href="">Sewer Repair, Maintenance & Replacement​</a>
-                            <!-- <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
-                                    </h6>
-                                    <h5 class="m-0">$99</h5>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1068,119 +910,81 @@
         </div>
     </div> -->
 
-
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>14967 Oswald St. Sylmar CA 91342</span>
+    <footer>
+        <div class="footer-wrap footer_no_bg">
+            <div class="footer-list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 footer-top">
+                            <div class="col-sm-3 col-xs-3 foot-list footer_address">
+                                <h3>Contact Us</h3> <a class="footer_ph" href="tel:520-293-6322">(855) 505-6225</a>
+                                <div itemscope="" itemtype="#">
+                                    <meta itemscope="" itemprop="name" content="Rooter Hero Plumbing">
+                                    <meta itemprop="image" content="#">
+                                    <link itemprop="url" href="#">
+                                </div>
+                                <div class="foot-text">California License: 996688 &amp; 829861 <span
+                                        class="full"></span>Arizona
+                                    License: ROC 275291 <span class="full"></span> Arizona HVAC: ROC 346227<span
+                                        class="full"></span>HVAC
+                                    License: <span class="full"></span>Velavi Heating &amp; Cooling Inc. 1004945 <span
+                                        class="full"></span>Allied Aire Services Inc. 260035<span
+                                        class="full"></span>All Rooter Hero
+                                    Locations Are Regionally Owned and Operated. </div> <br>
+                                <div class="foot-social"> <a class="f-book" href="" target="_blank"><span
+                                            class="fa fa-facebook" style=""></span></a> <a class="twit" href="#"
+                                        target="_blank"><span class="fa fa-twitter" style=""></span></a> <a
+                                        class="insta" href="#" target="_blank"><span class="fa fa-instagram"
+                                            style=""></span></a> <a class="insta" href="#" target="_blank"><span
+                                            class="fa fa-linkedin" style=""></span></a> <a class="insta" href="#"
+                                        target="_blank"><span class="fa fa-youtube-play" style=""></span></a> </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>(855) 505-6225</span>
+                            <div class="col-sm-3 foot-list services">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Plumbing Services</a></li>
+                                    <li><a href="#">Commercial Plumbing</a></li>
+                                    <li><a href="#">Service Areas</a></li>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>info@localplumersla.com</span>
+                            <div class="col-sm-3 foot-list location2">
+                                <h3>Privacy</h3>
+                                <ul>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                    <li><a href="#">California Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Do Not Sell My Info</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                    <li><a href="#">Accessibility Notice</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 foot-list emergency_service">
+                                <h3>Emergency Service</h3>
+                                <a class="footer_ph" href="tel:520-293-6322">(855) 505-6225</a>
+                                <a>Local Plumbers L.A</a>
+                                <a href="#"></a> <br><a>Electric
+                                    Hero®<br></a>
+                                <a>Liquid
+                                    Hero® Service Hero®</a> <a>Here to save your day®</a> <a>Everybody needs a hero®</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="img/logo-convertido.jpg" class="img-fluid"
-                                        alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Our technicians are ready to go with fully stocked trucks ready to help you out with
-                                    any plumbing needs, there is no job too big or too small for us.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
+            <div class="container footer-bottom">
+                <div class="col-sm-12 copy-write">
+                    <div class="col-sm-9 copywrite_text">
+                        <p>©2023 All Rights Reserved - Local Plumbers L.A</p>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <!-- <li><a href="#">portfolio</a></li> -->
-                                <li><a href="#">Contact</a></li>
-                                <!-- <li><a href="#">About us</a></li> -->
-                                <li><a href="#">Our Services</a></li>
-                                <!-- <li><a href="#">Expert Team</a></li> -->
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3 class="btn btn-primary">Book an apoinment</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Text</p>
-                            </div>
-                            <!-- <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2023, All Right Reserved <a href="https://localplumbersla.com/">Local
-                                    Plumbers</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="col-sm-3 iboost-logo"> <a href="https://www.oscarleon.app" title="Desarrollador Web"
+                            target="_blank">
+                            Designer and Developer by: OSCARLEON</a></div>
                 </div>
             </div>
         </div>
