@@ -1,10 +1,3 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -346,15 +339,6 @@ progress {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
-}
-
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
@@ -3807,7 +3791,6 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -10350,4 +10333,19 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.background-new {
+  border-top: 2px solid #ff6600;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.background-new a {
+  color: #ff6600;
+}
+
+.background-new h3 {
+  color: #fff;
 }
