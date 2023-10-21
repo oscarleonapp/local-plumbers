@@ -6530,3 +6530,25 @@ ul#secondary-menu ul.is-dropdown-submenu {
   background-color: #fff;
   color: #000;
 }
+
+/* GRID SERVICIOS */
+.servicios-container {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.item-card {
+  background-color: #0ba7eb;
+  width: 250px;
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 20px;
+  border: #0c4d78 solid 1px;
+  border-radius: 5px;
+}
