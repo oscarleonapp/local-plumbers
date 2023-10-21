@@ -9,64 +9,68 @@ https://templatemo.com/tm-567-nomad-force
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=IBM+Plex+Sans:ital,wght@0,200;0,400;1,100;1,500&family=Roboto:wght@300;400;500;700&display=swap");
 :root {
-  --white-color:                  #FFFFFF;
-  --primary-color:                #ffc107;
-  --section-bg-color:             #f9f9f9;
-  --dark-color:                   #000000;
-  --grey-color:                   #fcfeff;
-  --text-secondary-white-color:   rgba(255, 255, 255, 0.98);
-  --title-color:                  #565758;
-  --p-color:                      #717275;
+  --white-color: #ffffff;
+  --primary-color: #ffc107;
+  --section-bg-color: #f9f9f9;
+  --dark-color: #000000;
+  --grey-color: #fcfeff;
+  --text-secondary-white-color: rgba(255, 255, 255, 0.98);
+  --title-color: #565758;
+  --p-color: #717275;
 
-  --body-font-family:           'Noto Sans JP', sans-serif;
+  --body-font-family: "Noto Sans JP", sans-serif;
 
-  --h1-font-size:               72px;
-  --h2-font-size:               42px;
-  --h3-font-size:               36px;
-  --h4-font-size:               32px;
-  --h5-font-size:               24px;
-  --h6-font-size:               22px;
-  --p-font-size:                20px;
-  --copyright-text-font-size:   14px;
-  --custom-link-font-size:      12px;
+  --h1-font-size: 72px;
+  --h2-font-size: 42px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 14px;
+  --custom-link-font-size: 12px;
 
-  --font-weight-light:          300;
-  --font-weight-normal:         400;
-  --font-weight-bold:           700;
-  --font-weight-black:          900;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
 
-   /*========== Font and typography ==========*/
-   --body-font: 'Poppins', sans-serif;
-   --h1-font-size: 1.5rem;
-   --h2-font-size: 1.25rem;
-   --h3-font-size: 1rem;
-   --normal-font-size: .938rem;
-   --small-font-size: .875rem;
-   --smaller-font-size: .813rem;
- 
-   /*========== Font weight ==========*/
-   --font-medium: 500;
-   --font-semi-bold: 600;
- 
-   /*========== Margenes ==========*/
-   --mb-1: .5rem;
-   --mb-2: 1rem;
-   --mb-3: 1.5rem;
- 
-   /*========== z index ==========*/
-   --z-tooltip: 10;
-   --z-fixed: 100;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
 
-   --header-height: 3rem;
-  
-   /*========== Colors ==========*/
-   --title-color: #0B0A0A;
-   --text-color: #403A3A;
-   --text-color-light: #707070;
-   --container-color: #FAFAFA;
-   --container-color-alt: #F0EFEF;
-   --body-color: #FCFCFC;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --title-color: #0b0a0a;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container-color: #fafafa;
+  --container-color-alt: #f0efef;
+  --body-color: #fcfcfc;
+  --fuente: "Bricolage Grotesque", sans-serif;
+  --fuente2: "IBM Plex Sans", sans-serif;
+  --fuente3: "Roboto", sans-serif;
 }
 
 /* body,
@@ -162,17 +166,17 @@ a:hover {
   background: var(--dark-color);
   color: var(--white-color);
 } */
-.cta-hero{
+.cta-hero {
   font-size: var(--h1-font-size);
   line-height: normal;
 }
 
-.cta-hero-p{
+.cta-hero-p {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
   letter-spacing: 0.5px;
-  color: #FF6600;
+  color: #ff6600;
 }
 
 .custom-underline {
@@ -205,110 +209,109 @@ a:hover {
   left: 0;
 }
 
-.img-logo{
+.img-logo {
   width: 150px;
 }
 
-.background-color-nav{
+.background-color-nav {
   background-color: #000000;
   color: white;
 }
 
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /* MOBILE NAVBAR */
-.l-header{
+.l-header {
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #FF6600;
-  box-shadow: 0 -1px 4px rgba(0,0,0,.1);
-  transition: .3s;
+  background-color: #ff6600;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 /*========== NAV ==========*/
-.nav{
+.nav {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@media screen and (max-width: 968px){
-  .nav_menu{
+@media screen and (max-width: 968px) {
+  .nav_menu {
     position: fixed;
     bottom: -100%; /*var(--header-height)*/
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
     background-color: var(--body-color);
-    box-shadow: 0 -1px 4px rgba(0,0,0,.1);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
 .nav_logo,
-.nav_toggle{
+.nav_toggle {
   color: var(--body-color);
   font-weight: var(--font-medium);
 }
 
-.nav_logo{
+.nav_logo {
   margin-left: 10px;
 }
 
-.nav_toggle{
+.nav_toggle {
   font-size: 1.2rem;
   cursor: pointer;
   margin-right: 10px;
 }
 
-.nav_item{
+.nav_item {
   text-align: center;
 }
 
-.nav_list{
+.nav_list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.nav_link{
+.nav_link {
   display: flex;
   flex-direction: column;
   font-size: var(--smaller-font-size);
-  color:var(--text-color-light);
+  color: var(--text-color-light);
   font-weight: var(--font-medium);
 }
 
-.nav_link:hover{
+.nav_link:hover {
   color: var(--title-color);
 }
 
-.nav_icon{
+.nav_icon {
   font-size: 1.2rem;
   margin-bottom: var(--mb-1);
 }
 /* Show menu */
-.show-menu{
+.show-menu {
   bottom: var(--header-height);
 }
 
 /* Active menu link */
-.active-link{
+.active-link {
   color: var(--title-color);
 }
-
 
 /* FIN MOBILE */
 
@@ -854,17 +857,17 @@ strong {
 } */
 
 @media screen and (max-width: 767px) {
-  .cta-hero{
+  .cta-hero {
     font-size: 34px;
     line-height: normal;
   }
-  
-  .cta-hero-p{
+
+  .cta-hero-p {
     color: var(--p-color);
     font-size: 10px;
     font-weight: var(--font-weight-light);
     letter-spacing: 0.8px;
-    color: #FF6600;
+    color: #ff6600;
   }
 
   .custom-underline {
@@ -872,20 +875,20 @@ strong {
     color: var(--white-color);
     padding-bottom: 1px;
   }
-  }
+}
 
 @media screen and (max-width: 360px) {
-  .cta-hero{
+  .cta-hero {
     font-size: 24px;
     line-height: normal;
   }
-  
-  .cta-hero-p{
+
+  .cta-hero-p {
     color: var(--p-color);
     font-size: 10px;
     font-weight: var(--font-weight-light);
     letter-spacing: 0.8px;
-    color: #FF6600;
+    color: #ff6600;
   }
 
   .custom-underline {
@@ -898,15 +901,13 @@ strong {
 /*========== MEDIA QUERIES ==========*/
 
 /* Classes modified for large screen size */
-@media screen and (min-width: 968px){
+@media screen and (min-width: 968px) {
   .l-header,
-  .scrolltop{
+  .scrolltop {
     display: none;
   }
 
-
-  .home_button-movil{
+  .home_button-movil {
     display: none;
   }
-
 }
