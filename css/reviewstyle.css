@@ -555,14 +555,18 @@
 
 .rplg .rplg-biz-based {
   display: block !important;
-  color: #777 !important;
+  color: #fff !important;
   font-size: 14px !important;
   text-align: left !important;
-  text-shadow: 1px 1px 0 #fff !important;
+  /* text-shadow: 1px 1px 0 #fff !important; */
+}
+
+.rplg .rplg-biz-based:hover {
+  color: #000 !important;
 }
 
 .rplg .rplg-dark .rplg-biz-based {
-  color: #ccc !important;
+  color: #fff !important;
   text-shadow: none !important;
 }
 
@@ -788,7 +792,7 @@
 .rplg-badge2 .rplg-badge2-border {
   width: 100% !important;
   height: 6px !important;
-  background: #4fce6a !important;
+  background: #ff6600 !important;
   border-radius: 2px 2px 0 0 !important;
 }
 
@@ -798,8 +802,8 @@
   position: relative !important;
   padding: 10px !important;
   z-index: 999 !important;
-  color: #333 !important;
-  background: #fff !important;
+  color: #fff !important;
+  background: #0b0b0b !important;
   border-radius: 0 0 2px 2px !important;
   transition: all 0.2s ease-in-out !important;
 }
@@ -809,7 +813,8 @@
 }
 
 .rplg-badge2 .rplg-badge2-btn.rplg-badge2-clickable:hover {
-  background: #f3f3f5 !important;
+  background: #fff !important;
+  color: #000 !important;
 }
 
 .rplg-badge2 .rplg-badge2-btn img {
@@ -904,7 +909,7 @@
   right: 0 !important;
   width: 100% !important;
   height: 80px !important;
-  background: #fff !important;
+  background: #000000 !important;
   padding: 10px 16px !important;
   overflow: hidden !important;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12) !important;
@@ -1021,7 +1026,7 @@
 }
 
 .rplg-form .rplg-powered {
-  color: #999 !important;
+  color: #ffffff !important;
   margin: 12px 0 0 !important;
   font-size: 14px !important;
 }
@@ -1039,7 +1044,7 @@
 .rplg-form .rplg-yelp-logo img {
   float: none !important;
   width: 60px !important;
-  padding: 0 !important;
+  padding: 2px !important;
   vertical-align: bottom !important;
 }
 
