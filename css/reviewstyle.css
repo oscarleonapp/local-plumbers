@@ -264,12 +264,12 @@
 
 .rplg .rplg-review-avatar {
   display: block !important;
-  width: 56px !important;
-  height: 56px !important;
+  width: 50px !important;
+  height: 50px !important;
   font-style: italic !important;
   padding: 0 !important;
   margin: 0 10px 0 0 !important;
-  border-radius: 50% !important;
+  /* border-radius: 50% !important; */
   vertical-align: middle !important;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24) !important;
 }

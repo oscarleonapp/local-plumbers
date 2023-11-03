@@ -6101,22 +6101,40 @@ ul#secondary-menu ul.is-dropdown-submenu {
   background: #000;
   height: 100%;
 }
-@media screen and (max-width: 63.9375em) {
-  #main-menu-mobile ul li ul.submenu {
-    background: transparent;
-  }
-}
+
 #main-menu-mobile > ul {
   border-top: 3px solid #fbbb37;
 }
 #header-container {
   background-color: #000;
-  height: 118px;
+  height: 110px;
   width: 100%;
   position: fixed;
   z-index: 20;
   transition: all 0.3s;
   top: 0;
+}
+@media screen and (max-width: 63.9375em) {
+  #main-menu-mobile ul li ul.submenu {
+    background: transparent;
+  }
+  #header-container {
+    background-color: #000;
+    height: 0px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 20;
+    transition: all 0.3s;
+    top: 0;
+    display: none;
+  }
+  .mobile-header {
+    background-image: url("../img/logo-localPlumbers.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+  }
 }
 @media screen and (min-width: 64em) {
   #header-container {
@@ -6130,21 +6148,48 @@ ul#secondary-menu ul.is-dropdown-submenu {
     background-position: -765px 0;
   }
 }
+/* Cambiar */
 @media screen and (min-width: 48rem) and (max-width: 52.1875rem) {
   #header-container {
     background-image: none;
-    height: 110px;
+    height: 0px;
+    display: none;
+  }
+  .mobile-header {
+    background-image: url("../img/logo-localPlumbers.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
   }
 }
+/* Cambiar */
 @media screen and (min-width: 18.75rem) and (max-width: 40rem) {
   #header-container {
-    height: 95px;
+    height: 0px;
+    display: none;
+  }
+  .mobile-header {
+    background-image: url("../img/logo-localPlumbers.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
   }
 }
+/* Cambiar */
 @media screen and (min-width: 50rem) and (max-width: 63.9375rem) {
   #header-container {
-    height: 129px;
+    height: 0px;
     background-position: center bottom;
+    display: none;
+  }
+  .mobile-header {
+    background-image: url("../img/logo-localPlumbers.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
   }
 }
 #header-container .logo {
@@ -6155,13 +6200,14 @@ ul#secondary-menu ul.is-dropdown-submenu {
   height: 92px;
   width: 267px;
 }
+/* No cambiar */
 #header-container .logo-tagline span {
   background-image: url("../img/logo-localPlumbers.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
   height: 92px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 267px;
   text-indent: -9999px;
 }
@@ -6172,10 +6218,12 @@ ul#secondary-menu ul.is-dropdown-submenu {
 }
 #header-container.smaller {
   background-image: none;
-  height: 94px;
+  height: 0px;
+  display: none;
 }
 #header-container.smaller .logo-tagline {
-  height: 56px;
+  height: 0px;
+  display: none;
 }
 #header-container.smaller .logo-tagline span {
   background-image: url("../img/logo-localPlumbers.jpg");
@@ -6197,6 +6245,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
 @media screen and (min-width: 48rem) and (max-width: 64rem) {
   #header-container.smaller .mobile-icons {
     margin-top: 18px;
+    display: none;
   }
 }
 @media screen and (max-width: 39.9375em) {
@@ -6205,7 +6254,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 103px;
+    height: 60px;
   }
 }
 .mobile-header .mobile-home {
@@ -6227,12 +6276,14 @@ ul#secondary-menu ul.is-dropdown-submenu {
 @media screen and (min-width: 25rem) and (max-width: 43.75rem) {
   .mobile-header .mobile-home a {
     background-repeat: no-repeat;
+    /* height: 25px; */
   }
 }
 .mobile-header .mobile-icons {
   float: right;
   margin-top: 2.1875rem;
   width: 25%;
+  display: none;
 }
 @media screen and (min-width: 48rem) and (max-width: 52.1875rem) {
   .mobile-header .mobile-icons {
@@ -6513,6 +6564,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
   #header .quote-button {
     float: left;
     margin: 0;
+    display: none;
   }
 }
 @media screen and (max-width: 39.9375em) {
