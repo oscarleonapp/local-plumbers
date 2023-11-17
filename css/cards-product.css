@@ -95,7 +95,7 @@
 .card__bx:hover .card__data .card__icon {
   color: var(--dark-color);
   background-color: var(--clr);
-  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 300px var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 500px var(--clr);
 }
 .card__bx .card__data .card__content {
   display: flex;
