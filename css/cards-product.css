@@ -107,7 +107,7 @@
 .card__bx .card__data h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--white-color);
+  color: var(--dark-alt-color);
   transition: var(--transition);
 }
 .card__bx:hover .card__data h3 {
