@@ -592,6 +592,7 @@
   z-index: 2147482999 !important;
 }
 
+/* CAMBIAR LA POSICION DE LAS RESEÑAS */
 .rplg .rplg-badge_left-fixed {
   position: fixed !important;
   left: 30px !important;
