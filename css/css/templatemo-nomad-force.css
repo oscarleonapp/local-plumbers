@@ -57,7 +57,7 @@ https://templatemo.com/tm-567-nomad-force
 
   /*========== z index ==========*/
   --z-tooltip: 10;
-  --z-fixed: 100;
+  --z-fixed: 999999999;
 
   --header-height: 3rem;
 
@@ -186,6 +186,7 @@ a:hover {
 }
 
 .videoWrapper {
+  top: 51px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
@@ -193,6 +194,7 @@ a:hover {
 }
 
 .custom-video {
+  margin-top: 100px;
   position: absolute;
   top: 0;
   left: 0;
@@ -211,6 +213,11 @@ a:hover {
 
 .img-logo {
   width: 150px;
+}
+
+.position-nav-fixed {
+  position: fixed;
+  z-index: 9999;
 }
 
 .background-color-nav {
@@ -233,7 +240,7 @@ a {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 3147482999;
   background-color: #000000;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
@@ -500,6 +507,7 @@ strong {
   HERO              
 -----------------------------------------*/
 .hero {
+  /* margin-top: 60px; */
   position: relative;
   overflow: hidden;
 }
@@ -856,6 +864,11 @@ strong {
 
 } */
 
+.cta-hero {
+  font-size: 100px;
+  line-height: normal;
+}
+
 @media screen and (max-width: 767px) {
   .cta-hero {
     font-size: 34px;
@@ -910,4 +923,8 @@ strong {
   .home_button-movil {
     display: none;
   }
+}
+
+a {
+  text-decoration: none;
 }

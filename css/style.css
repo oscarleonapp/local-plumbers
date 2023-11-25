@@ -10352,3 +10352,7 @@ h6,
 .background-new h3 {
   color: #fff;
 }
+
+a:hover {
+  text-decoration: none;
+}

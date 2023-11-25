@@ -595,7 +595,7 @@
 .rplg .rplg-badge_left-fixed {
   position: fixed !important;
   left: 30px !important;
-  bottom: 30px !important;
+  bottom: 50px !important;
   max-width: none !important;
   z-index: 2147482999 !important;
 }

@@ -27,8 +27,9 @@ html {
   box-sizing: inherit;
 }
 
+/* Tamaño para la navbar */
 .row {
-  max-width: 75rem;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5550,6 +5551,7 @@ body.overlay:after {
     clear: none !important;
   }
 }
+/* Color del boton */
 .button {
   background-color: #fbbb37;
   color: #000;
@@ -5561,6 +5563,7 @@ body.overlay:after {
   height: 70px;
   width: 199px;
   padding: 0.5rem 0;
+  border-radius: 3px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out !important;
 }
 .button.post-type-filter {
@@ -5924,6 +5927,8 @@ ul.content-menu li a:hover {
 .home-stats ul.slick-dots {
   bottom: -36px !important;
 }
+
+/* Revisar desde acá */
 body {
   font-family: var(--fuente3);
   font-size: 1.125rem;
@@ -6105,6 +6110,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
 #main-menu-mobile > ul {
   border-top: 3px solid #fbbb37;
 }
+/* Cambiar altura del nav */
 #header-container {
   background-color: #000;
   height: 110px;
@@ -6113,6 +6119,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
   z-index: 20;
   transition: all 0.3s;
   top: 0;
+  margin-top: 40px;
 }
 @media screen and (max-width: 63.9375em) {
   #main-menu-mobile ul li ul.submenu {
@@ -6198,16 +6205,16 @@ ul#secondary-menu ul.is-dropdown-submenu {
 #header-container .logo-tagline {
   display: block;
   height: 92px;
-  width: 267px;
+  width: 200px;
 }
-/* No cambiar */
+/* Bajar o subir el logo */
 #header-container .logo-tagline span {
   background-image: url("../img/logo-localPlumbers.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
   height: 92px;
-  margin-top: 0.5rem;
+  margin-top: 4.5rem;
   width: 267px;
   text-indent: -9999px;
 }
@@ -6333,6 +6340,8 @@ ul#secondary-menu ul.is-dropdown-submenu {
 #header header {
   width: 100%;
 }
+
+/* Revisar aca */
 @media screen and (max-width: 39.9375em) {
   #header header {
     padding-top: 0.9375rem;
@@ -6559,12 +6568,14 @@ ul#secondary-menu ul.is-dropdown-submenu {
   height: 62px;
   width: 100px;
   padding: 0;
+  margin-right: 6px;
 }
 @media screen and (min-width: 6.25rem) and (max-width: 63.9375rem) {
   #header .quote-button {
     float: left;
     margin: 0;
     display: none;
+    margin-right: 6px;
   }
 }
 @media screen and (max-width: 39.9375em) {
