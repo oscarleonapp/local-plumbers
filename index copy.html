@@ -51,7 +51,7 @@
     <!-- <link rel="stylesheet" href="css/footer.css"> -->
 
     <!-- NEW HEADER -->
-    <link rel="stylesheet" href="./src/header-style.css" type="text/css" media="all">
+    <!-- <link rel="stylesheet" href="./src/header-style.css" type="text/css" media="all"> -->
 
     <script type="text/javascript" src="./src/jquery.min.js" id="jquery-core-js"></script>
     <script type="text/javascript" src="./src/foundation.min.js"></script>
@@ -69,246 +69,163 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
     <!-- CARDS PRODUCTS -->
 
-
+    <!-- Component Header -->
+    <link rel="stylesheet" href="css/ccs-header.css">
 
 </head>
 
 <body>
-    <!-- HEADER TOP -->
-    <!-- <div class="container-fluid  background-color-nav position-nav-fixed">
-        <div class="row  px-sm-5  background-color-nav">
-            <div class="col-lg-3 d-none d-lg-block">
-
-            </div>
-            <div class="col-lg-9  background-color-nav">
-                <nav class="navbar navbar-expand-lg  py-3 py-lg-0 px-0  background-color-nav">
-                    <div class="collapse navbar-collapse justify-content-between  background-color-nav"
-                        id="navbarCollapse">
-                    </div>
-                    <div class="nav-item dropdown  background-color-nav">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Languaje</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Ingles</a>
-                            <a href="#" class="dropdown-item">Español</a>
-                        </div>
-                    </div>
-                    <a href="#"><i class="bi bi-facebook text-primary mr-3"></i></a>
-                    <a href="#"><i class="bi bi-instagram text-primary mr-3"></i></a>
-                    <a href="#"><i class="bi bi-yelp text-primary mr-3"></i></a>
-                    <a href="#"><i class="bi bi-youtube text-primary mr-3"></i></a>
-                </nav>
-            </div>
-        </div>
-    </div> -->
-    <!-- FIN HEADER TOP -->
-
-
-    <!-- NEW HEADER -->
-    <section id="header-container">
-
-
-        <section id="header">
-
-            <div class="show-for-large">
-
-                <header id="pageHeader">
-
-                    <div class="row">
-
-                        <div class="large-3 medium-5 small-2 columns logo">
-
-                            <a class="logo-tagline" href="#">
-                                <img src="img/logo-localPlumbers.jpg" alt="" class="logo-img">
-                                <span></span>
-                            </a>
-
-                        </div><!-- /.large-3 -->
-
-                        <div class="large-9 medium-7 small-10 columns menu-container">
-
-                            <div class="button-container">
-                                <a href="#" class="button quote-button"><span>CALL <b>8555056225</b></span></a>
-                                <a href="#" class="button quote-button"><span>Book an <b>APOINMENT</b></span></a>
-                            </div>
-
-                            <svg class="svg-inline--fa fa-phone fa-w-16 show-for-small-only" aria-hidden="true"
-                                focusable="false" data-prefix="fa" data-icon="phone" role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                <path fill="currentColor"
-                                    d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+    <!-- HEADER COMPONENT -->
+    <nav class="menu__wrapper">
+        <div class="menu__bar">
+            <a href="#" title="OSCARLEON" aria-label="OSCARLEON" class="logo">
+                <span class="logo-name">
+                    <h2 data-text="LOCAL PLUMBERS L.A"><span class="oscar">LOCAL PLUMBERS L.A</span>
+                </span></h2>
+            </a>
+            <nav>
+                <ul class="navigation hide">
+                    <li>
+                        <button>
+                            Servicios
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
+                                <path
+                                    d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z">
                                 </path>
-                            </svg><!-- <i class="fa fa-phone show-for-small-only" aria-hidden="true"></i> -->
-
-                            <nav id="top-menu">
-                                <!-- Primera Fila del NavBar -->
-                                <ul id="secondary-menu" class="menu dropdown" data-close-on-click-inside="false"
-                                    data-responsive-menu="accordion medium-dropdown" role="menubar"
-                                    data-dropdown-menu="rbgn4t-dropdown-menu">
-
-
-                                    <li id="menu-item-10370"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10370 is-dropdown-submenu-parent opens-right"
-                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
-                                        aria-label="Tips &amp; Tools"><a href="#" tabindex="0">Blogs</a>
-                                        <ul class="sub-menu submenu is-dropdown-submenu first-sub vertical"
-                                            data-submenu="" aria-hidden="true" role="menu">
-
-                                            <li id="menu-item-13370"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13370 is-submenu-item is-dropdown-submenu-item"
-                                                role="menuitem"><a href="#"></a>
-                                            </li>
-
-                                            <li id="menu-item-13370"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13370 is-submenu-item is-dropdown-submenu-item"
-                                                role="menuitem"><a href="#"></a>
-                                            </li>
-
-                                            <li id="menu-item-13370"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13370 is-submenu-item is-dropdown-submenu-item"
-                                                role="menuitem"><a href="#"></a>
-                                            </li>
-
-                                        </ul>
+                            </svg>
+                        </button>
+                        <!-- Menu desplegable -->
+                        <div class="dropdown__wrapper">
+                            <div class="dropdown">
+                                <ul class="list-items-with-description">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Desarrollo Web</h3>
+                                            <p>Programación HTML/CSS/JS</p>
+                                        </div>
                                     </li>
-                                    <li id="menu-item-10371"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10371"
-                                        role="menuitem"><a href="#">Financing</a>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="M160-120v-170l527-526q12-12 27-18t30-6q16 0 30.5 6t25.5 18l56 56q12 11 18 25.5t6 30.5q0 15-6 30t-18 27L330-120H160Zm80-80h56l393-392-28-29-29-28-392 393v56Zm560-503-57-57 57 57Zm-139 82-29-28 57 57-28-29ZM560-120q74 0 137-37t63-103q0-36-19-62t-51-45l-59 59q23 10 36 22t13 26q0 23-36.5 41.5T560-200q-17 0-28.5 11.5T520-160q0 17 11.5 28.5T560-120ZM183-426l60-60q-20-8-31.5-16.5T200-520q0-12 18-24t76-37q88-38 117-69t29-70q0-55-44-87.5T280-840q-45 0-80.5 16T145-785q-11 13-9 29t15 26q13 11 29 9t27-13q14-14 31-20t42-6q41 0 60.5 12t19.5 28q0 14-17.5 25.5T262-654q-80 35-111 63.5T120-520q0 32 17 54.5t46 39.5Z" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Diseño Web</h3>
+                                            <p>Apartado visual del sitio web</p>
+                                        </div>
                                     </li>
-                                    <li id="menu-item-10372"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10372"
-                                        role="menuitem"><a href="tel:855-505-6225">Coupons</a></li>
-
-                                </ul>
-                            </nav><!-- /#top-menu -->
-
-                            <nav id="main-menu">
-
-                                <ul id="primary-nav-container" class="menu dropdown" data-close-on-click-inside="false"
-                                    data-responsive-menu="accordion medium-dropdown" role="menubar"
-                                    data-dropdown-menu="mqh613-dropdown-menu">
-                                    <li id="menu-item-10360"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10360 level-0 is-dropdown-submenu-parent opens-right"
-                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
-                                        aria-label="Portfolio"><a href="#" tabindex="0">Drain Cleaning</a>
-                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
-                                            aria-hidden="true" role="menu">
-                                            <div class="small-6 columns">
-                                                <li id="menu-item-14353"
-                                                    class="split menu-category show-for-large menu-item menu-item-type-custom menu-item-object-custom menu-item-14353 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                    role="menuitem"><a href="#">Services #1</a></li>
-                                                <li id="menu-item-12067"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12067 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                    role="menuitem"><a href="#">Drain Cleaining</a></li>
-                                                <li id="menu-item-12067"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12067 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                    role="menuitem"><a href="#">Water Heater Repair</a></li>
-
-                                            </div>
-
-                                            <div class="small-6 columns">
-                                                <li id="menu-item-14354"
-                                                    class="split2 menu-category show-for-large menu-item menu-item-type-custom menu-item-object-custom menu-item-14354 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                    role="menuitem"><a href="#">Services #2</a></li>
-                                                <li id="menu-item-14352"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14352 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                    role="menuitem"><a href="#">Leak Detection</a>
-                                                </li>
-                                                <li id="menu-item-14352"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14352 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                    role="menuitem"><a href="#">Sewer Repair</a>
-                                                </li>
-
-                                            </div>
-
-                                        </ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>SEO</h3>
+                                            <p>Content Marketing / Semantic Code</p>
+                                        </div>
                                     </li>
-                                    <li id="menu-item-25742"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25742 level-0"
-                                        role="menuitem"><a href="#">Sewer Repair</a></li>
-                                    <li id="menu-item-10361"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10361 level-0 is-dropdown-submenu-parent opens-right"
-                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
-                                        aria-label="Capabilities"><a href="#">Leak Detection</a>
-                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
-                                            aria-hidden="true" role="menu">
-                                            <li id="menu-item-12020"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12020 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                role="menuitem"><a href="#">Laundry Plumbing</a></li>
-
-                                        </ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Google Analytics</h3>
+                                            <p>Informe de métricas</p>
+                                        </div>
                                     </li>
-                                    <li id="menu-item-10362"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10362 level-0 is-dropdown-submenu-parent opens-right"
-                                        role="menuitem" aria-haspopup="true" aria-expanded="false"
-                                        aria-label="Industries Served"><a href="#">Water Heater Repair</a>
-                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
-                                            aria-hidden="true" role="menu">
-                                            <li id="menu-item-14047"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14047 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                role="menuitem"><a href="#">Opción 1</a>
-                                            </li>
-
-                                        </ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="M824-120 636-308q-41 32-90.5 50T440-240q-90 0-162.5-44T163-400h98q34 37 79.5 58.5T440-320q100 0 170-70t70-170q0-100-70-170t-170-70q-94 0-162.5 63.5T201-580h-80q8-127 99.5-213.5T440-880q134 0 227 93t93 227q0 56-18 105.5T692-364l188 188-56 56ZM397-400l-63-208-52 148H80v-60h160l66-190h60l61 204 43-134h60l60 120h30v60h-67l-47-94-50 154h-59Z" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Google Search Console</h3>
+                                            <p>Keywords y tráfico Web</p>
+                                        </div>
                                     </li>
-                                    <li id="menu-item-10363"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10363 level-0 is-dropdown-submenu-parent opens-right"
-                                        role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="About"><a
-                                            href="#">Other Services</a>
-                                        <ul class="menu submenu is-dropdown-submenu first-sub vertical" data-submenu=""
-                                            aria-hidden="true" role="menu">
-                                            <li id="menu-item-14215"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14215 level-1 is-submenu-item is-dropdown-submenu-item"
-                                                role="menuitem"><a href="#">History</a></li>
-                                        </ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 162l-84-25q-13-54-56-88.5T480-640q-66 0-113 47t-47 113q0 57 34.5 100t88.5 56l25 84Zm48 158q-9 2-18 2h-18q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v18q0 9-2 18l-78-24v-12q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93h12l24 78Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Publicidad Digital</h3>
+                                            <p>Meta / Google Ads</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                            width="24">
+                                            <path
+                                                d="M480-40v-80h280v-40H600v-320h160v-40q0-116-82-198t-198-82q-116 0-198 82t-82 198v40h160v320H200q-33 0-56.5-23.5T120-240v-280q0-74 28.5-139.5T226-774q49-49 114.5-77.5T480-880q74 0 139.5 28.5T734-774q49 49 77.5 114.5T840-520v400q0 33-23.5 56.5T760-40H480ZM200-240h80v-160h-80v160Zm480 0h80v-160h-80v160ZM200-400h80-80Zm480 0h80-80Z" />
+                                        </svg>
+
+                                        <div class="item-title">
+                                            <h3>Asesoria profesional</h3>
+                                            <p>1ra. Sesión GRATIS</p>
+                                        </div>
                                     </li>
                                 </ul>
-                            </nav><!-- /#main-menu -->
-
-                        </div><!-- /.large-9 -->
-
-                    </div><!-- /.row -->
-
-                </header><!-- / #pageHeader -->
-
-            </div><!-- /.show-for-large -->
-
-            <div class="hide-for-large">
-
-                <div class="row">
-
-                    <div class="mobile-header">
-
-                        <span class="mobile-home"><a class="" href="#"></a></span>
-
-                        <div class="mobile-icons">
-
-                            <div class="button-container">
-                                <a href="#" class="button quote-button"><span>Request a</span>Quote</a>
-                            </div><!-- /.button-container -->
-
-
-                            <a href="tel:+19088359000"><svg class="svg-inline--fa fa-phone fa-w-16" aria-hidden="true"
-                                    focusable="false" data-prefix="fa" data-icon="phone" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                    <path fill="currentColor"
-                                        d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
-                                    </path>
-                                </svg><!-- <i class="fa fa-phone" aria-hidden="true"></i> --></a>
-
-
-                        </div><!-- /.mobile-icons -->
-
-                    </div><!-- /.mobile-header -->
-
-                </div><!-- /.row -->
-
-
-            </div><!-- / .hide-for-large -->
-
-        </section><!-- /#header -->
-
-    </section><!-- /#header-container -->
-    <!-- NEW HEADER -->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#about" title="¿Quien soy?">
+                            ¿Quién soy?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#certificate" title="Certificaciones">
+                            Certificaciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" title="Portafolio">
+                            Portafolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reviews" title="Opiniones">
+                            Opiniones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog" title="Blog">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="action-buttons hide">
+            <a href="#log-in" title="Log in" class="secondary">
+                Clientes
+            </a>
+            <!-- <a href="#sign-up" title="Sign up" class="primary">
+                Sign up
+            </a> -->
+        </div>
+        <button aria-label="Open menu" class="burger-menu" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 8l16 0" />
+                <path d="M4 16l16 0" />
+            </svg>
+        </button>
+    </nav>
 
     <!-- Mobile NavBar -->
     <!--========== HEADER ==========-->
@@ -457,10 +374,13 @@
                         <h1>WE ARE A GROUP OF PROFESSIONAL PLUMBERS​</h1>
                     </div>
                     <p>We strive to be the best option for you, which means you are getting a knowledgeable,
-                        quality-oriented technician whose sole purpose is to serve you and solve your plumbing issue.
+                        quality-oriented technician whose sole purpose is to serve you and solve your plumbing
+                        issue.
                     </p>
-                    <p>We are dedicated to providing exceptional service and quality workmanship to all our customers.
-                        We take pride in delivering honest and efficient solutions to meet all of our customer’s needs.
+                    <p>We are dedicated to providing exceptional service and quality workmanship to all our
+                        customers.
+                        We take pride in delivering honest and efficient solutions to meet all of our customer’s
+                        needs.
                     </p>
                     <!-- <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a> -->
                 </div>
@@ -678,7 +598,8 @@
                         <h3>Sewer Repair, Maintenance & Replacement​</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laborum aspernatur maxime
                             fugit ipsam quam nemo veritatis. Eveniet minus ducimus sunt architecto sapiente itaque
-                            doloribus quaerat consectetur eum nisi esse, quisquam minima consequatur quidem dignissimos
+                            doloribus quaerat consectetur eum nisi esse, quisquam minima consequatur quidem
+                            dignissimos
                             nesciunt neque accusantium nobis id.</p>
                         <a href="#">Read More</a>
                     </div>
@@ -1158,7 +1079,8 @@
                 <div class="rplg-form-content-inner">
                     <div class="rplg-links"><a
                             href="https://search.google.com/local/reviews?placeid=ChIJnd5sWG6PwoARR2mq7lj94g4"
-                            target="_blank" rel="noopener" onclick="return true;" title="Opens in a new window">See all
+                            target="_blank" rel="noopener" onclick="return true;" title="Opens in a new window">See
+                            all
                             reviews</a><a
                             href="https://search.google.com/local/writereview?placeid=ChIJnd5sWG6PwoARR2mq7lj94g4"
                             target="_blank">Write
@@ -1360,12 +1282,15 @@
                                     <p class="rplg-review-text">
                                         I first went through my home warranty
                                         in which a thermostatic valve cartridge was not covered nor could they find
-                                        someone to provide service. Then I reached out to Local Plumbers. I spoke with
+                                        someone to provide service. Then I reached out to Local Plumbers. I spoke
+                                        with
                                         Julio P and he was very knowledgeable and professional.
                                         <br><br>
                                         He was an able to
-                                        squeeze me in on short notice and I am a Happy Customer! The professionalism and
-                                        customer service I experienced was top notch! I would recommend this provider to
+                                        squeeze me in on short notice and I am a Happy Customer! The professionalism
+                                        and
+                                        customer service I experienced was top notch! I would recommend this
+                                        provider to
                                         anyone who needs quality services. 10 stars for Julio P and Local
                                         Plumbers…
                                     </p>
@@ -1410,7 +1335,8 @@
                                         Precio, Profesionalismo</p>
                                     <p class="rplg-review-text">
                                         Julio is amazing! He is helpful,
-                                        communicative, and goes above and beyond for his customers. He did a great job
+                                        communicative, and goes above and beyond for his customers. He did a great
+                                        job
                                         installing my new dishwasher and I will be calling him again in the future.
                                         Thank you Julio!!!
                                     </p>
@@ -1495,7 +1421,8 @@
                                     <p class="rplg-review-text">
                                         Very responsible and punctual. <br><br>
                                         The work was done on time with superior knowledge and confidence.
-                                        Has exceptional communication skills, understands customer’s expectations and
+                                        Has exceptional communication skills, understands customer’s expectations
+                                        and
                                         finds the best solution.
                                         <br><br>
                                         Provides very detailed Estimate and Invoice.
@@ -1548,9 +1475,11 @@
                                     <br>
                                     <!-- Mensaje -->
                                     <p class="rplg-review-text">
-                                        Had a blockage in my main sewer line. Called Julio and twenty minutes later he
+                                        Had a blockage in my main sewer line. Called Julio and twenty minutes later
+                                        he
                                         was knocking on my door. He had a great professional attitude and carefully
-                                        walked me through every step of the fix. He will be my plumber going forward.
+                                        walked me through every step of the fix. He will be my plumber going
+                                        forward.
                                         Highly recommended.
                                     </p>
                                     <br>
@@ -1600,14 +1529,18 @@
                                     <br>
                                     <!-- Mensaje -->
                                     <p class="rplg-review-text">
-                                        Local Plumbers is an amazing company. I was under a lot of stress because we had
+                                        Local Plumbers is an amazing company. I was under a lot of stress because we
+                                        had
                                         an active leak from our garage.
                                         <br><br> He was reassuring and came on time. He took his
-                                        time to explain the step by step procedure and showed me where the issue was. He
-                                        was very patient and never made me feel dumb for my lack of knowledge, we all
+                                        time to explain the step by step procedure and showed me where the issue
+                                        was. He
+                                        was very patient and never made me feel dumb for my lack of knowledge, we
+                                        all
                                         know many people get annoyed when you ask questions.
                                         <br><br>It was was extremely
-                                        reasonably priced. I’m happy we now have a “go to” plumber. I highly recommend
+                                        reasonably priced. I’m happy we now have a “go to” plumber. I highly
+                                        recommend
                                         hiring Local Plumbers!!
                                     </p>
                                     <br>
@@ -1661,13 +1594,15 @@
                                         <br><br>He was very thorough with the job and took the time
                                         to explain to us all the problems and helped us fix everything.
                                         <br><br>Very fair on
-                                        price as well. I will be recommending him to anyone we know that needs plumbing
+                                        price as well. I will be recommending him to anyone we know that needs
+                                        plumbing
                                         services.
                                     </p>
                                     <br>
                                     <!-- Servicio -->
                                     <p class="rplg-review-text">
-                                        <b>Servicio:</b> Detección de fugas en tuberías, Reparación de tuberías y caños
+                                        <b>Servicio:</b> Detección de fugas en tuberías, Reparación de tuberías y
+                                        caños
                                     </p>
                                 </div>
                             </div>
@@ -1758,18 +1693,24 @@
                                         valve that was not up to code and delayed my dryer installation.
                                         <br><br>
                                         I called
-                                        several places who were either unresponsive or who quoted a very high price for
-                                        5 min of work (they said it was a quick 5 min job). Julio returned my call and
+                                        several places who were either unresponsive or who quoted a very high price
+                                        for
+                                        5 min of work (they said it was a quick 5 min job). Julio returned my call
+                                        and
                                         was available within a few hours.
 
                                         <br><br>He was detail oriented, professional, very
-                                        clean and respectful of my home, and explained everything. He ensured every gas
-                                        appliance was working before leaving. He was incredibly knowledgeable and I will
+                                        clean and respectful of my home, and explained everything. He ensured every
+                                        gas
+                                        appliance was working before leaving. He was incredibly knowledgeable and I
+                                        will
                                         only be calling this company in the future.
 
                                         <br><br> Finding a trustworthy company can be
-                                        so challenging and as a new home owner, I’ve had my fair share of run ins with
-                                        less than professional companies. I highly recommend Local Plumbers for any job,
+                                        so challenging and as a new home owner, I’ve had my fair share of run ins
+                                        with
+                                        less than professional companies. I highly recommend Local Plumbers for any
+                                        job,
                                         big or small!
                                     </p>
                                 </div>

@@ -1,0 +1,329 @@
+/* FUENTE */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&display=swap");
+
+:root {
+  /* Colors colection */
+  --black: #000000;
+  --white: #ffffff;
+
+  /* COMPONENTS */
+  /* NavBar */
+  --navbar-background: #13161c;
+  --secondary-background: #f2f2f2;
+  --gray: #847f90;
+  --gray-hover: #171717;
+  --primary-hover: #555555;
+  --link-gray: #666666;
+  --link-gray-hover: #171717;
+  --gray: #e1e1e1;
+  --gray-border: #e6e6e6;
+
+  /* BRAND */
+  --titulo: #07c373;
+  --span: #0ae98a;
+  --content-subtitle: #dde0e5;
+  --texto-gris-2: #a4abb6;
+  --texto-azul: #0c1633;
+
+  --subtitulo: #eff3f8;
+  --tarjeta-1: #cee5cd;
+  --tarjeta-2: #fad8d5;
+  --tarjeta-3: #ffe1c2;
+  --background-1: #13161c;
+  --background-2: #2c323c;
+  --background-3: #1c2028;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== COMPONENTES ===== */
+
+/* =====## NavBar #1 ##===== */
+.menu__wrapper {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 2;
+  gap: 2rem;
+  background-color: var(--navbar-background);
+  height: 4.5rem;
+  padding: 0px 16px;
+  align-items: center;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu__bar {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.oscar {
+  color: var(--white);
+}
+
+.navigation {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--navbar-background);
+}
+
+.navigation > li {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  min-height: 36px;
+}
+
+.navigation > li > a {
+  color: var(--white);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navigation > li > a:hover {
+  color: var(--titulo);
+}
+
+.navigation > li > button {
+  color: var(--white);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  margin-right: -4px;
+  align-items: center;
+  min-height: 36px;
+  font-size: 14px;
+  gap: 4px;
+  font-family: "Open Sans", sans-serif;
+  flex-wrap: nowrap;
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+  background: none;
+  display: flex;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation > li > button > svg {
+  margin-top: 2px;
+  fill: var(--titulo);
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation > li:hover > button svg {
+  fill: var(--navbar-background);
+  rotate: 180deg;
+}
+
+.navigation > li:hover > button {
+  color: var(--navbar-background);
+  background-color: var(--white);
+}
+
+.navigation > li:hover .dropdown {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.99) translateY(-0.7em);
+    transform-origin: top;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* dropdown menu */
+.dropdown__wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 60px;
+}
+
+.dropdown {
+  border-radius: 8px;
+  background-color: var(--white);
+  display: none;
+  padding: 8px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid var(--gray-border);
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.12),
+    0 30px 60px -30px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.list-items-with-description {
+  list-style-type: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.list-items-with-description li {
+  display: flex;
+  padding: 8px;
+  gap: 16px;
+  width: 100%;
+}
+
+.list-items-with-description li:hover {
+  background-color: var(--secondary-background);
+  border-radius: 6px;
+}
+
+.list-items-with-description li svg {
+  stroke: var(--link-gray-hover);
+  stroke-width: 1px;
+  width: 24px;
+  height: 24px;
+}
+
+.item-title h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--link-gray-hover);
+}
+
+.item-title p {
+  font-size: 12px;
+  white-space: nowrap;
+  color: var(--link-gray);
+}
+
+/* login sign-up buttons */
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.action-buttons a {
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 4px 8px;
+  transition: all 0.2s ease-in-out;
+  line-height: 1.25rem;
+}
+
+.secondary {
+  background: var(--white);
+  color: var(--texto-azul);
+  outline: none;
+  border: 1px solid var(--b);
+  border-radius: 5px;
+}
+
+.secondary:hover {
+  background: var(--titulo);
+  color: var(--white);
+}
+
+.primary {
+  color: var(--white);
+  border-radius: 6px;
+  background-color: var(--navbar-background);
+  padding: 8px 16px;
+}
+
+.primary:hover {
+  background-color: var(--navbar-background-hover);
+}
+
+.burger-menu {
+  display: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (max-width: 769px) {
+  .hide {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    pointer-events: all;
+    gap: 4px;
+    flex-direction: column;
+    border: 1px solid var(--titulo);
+  }
+
+  .burger-menu svg {
+    height: 20px;
+    stroke: var(--white);
+    width: 20px;
+  }
+}
+
+/* ===================== ANIMACIÓN LOGO ===================== */
+h2 {
+  position: relative;
+  font-size: 1.7rem;
+  /* font-weight: 700; */
+  color: var(--titulo);
+  /* -webkit-text-stroke: 0.01vw var(--titulo); */
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: var(--titulo);
+  /* -webkit-text-stroke: 0vw #383d52; */
+  /* border-right: 1px solid var(--titulo); */
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  120% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* ===================== HERO ===================== */

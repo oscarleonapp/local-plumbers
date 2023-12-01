@@ -186,7 +186,7 @@ a:hover {
 }
 
 .videoWrapper {
-  top: 51px;
+  /* top: 51px; */
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
@@ -507,7 +507,7 @@ strong {
   HERO              
 -----------------------------------------*/
 .hero {
-  /* margin-top: 60px; */
+  margin-top: -25px;
   position: relative;
   overflow: hidden;
 }

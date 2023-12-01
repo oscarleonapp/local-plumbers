@@ -6110,16 +6110,16 @@ ul#secondary-menu ul.is-dropdown-submenu {
 #main-menu-mobile > ul {
   border-top: 3px solid #fbbb37;
 }
-/* Cambiar altura del nav */
+/* Cambiar altura del nav Cambiar el vw por 100% */
 #header-container {
   background-color: #000;
-  height: 110px;
+  height: 95px;
   width: 100%;
   position: fixed;
   z-index: 20;
   transition: all 0.3s;
   top: 0;
-  margin-top: 40px;
+  margin-top: -20px;
 }
 @media screen and (max-width: 63.9375em) {
   #main-menu-mobile ul li ul.submenu {
@@ -6208,14 +6208,17 @@ ul#secondary-menu ul.is-dropdown-submenu {
   width: 200px;
 }
 /* Bajar o subir el logo */
-#header-container .logo-tagline span {
+/* #header-container .logo-tagline span {
   background-image: url("../img/logo-localPlumbers.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+} */
+/* Cambiar el logo */
+.logo-img {
   display: block;
-  height: 92px;
-  margin-top: 4.5rem;
-  width: 267px;
+  height: 141px;
+  margin-top: 2.5rem;
+  width: 368px;
   text-indent: -9999px;
 }
 @media screen and (max-width: 39.9375em) {
@@ -6240,7 +6243,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
 @media screen and (max-width: 39.9375em) {
   #header-container.smaller .logo-tagline span {
     background-image: url("../img/logo-localPlumbers.jpg");
-    width: 70%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 64rem) {
@@ -6559,15 +6562,16 @@ ul#secondary-menu ul.is-dropdown-submenu {
     line-height: 1 !important;
   }
 }
+/* MOVER LA LINEA DEL MENU SECUNDARIO */
 #header nav .menu li.level-0 a {
-  line-height: 0.75;
+  line-height: 1.3;
   padding: 0.6875rem 0.375rem !important;
 }
 #header .quote-button {
   float: right;
-  height: 62px;
+  height: 36px;
   width: 100px;
-  padding: 0;
+  padding: 0 0 10px 0;
   margin-right: 6px;
 }
 @media screen and (min-width: 6.25rem) and (max-width: 63.9375rem) {
@@ -6585,7 +6589,7 @@ ul#secondary-menu ul.is-dropdown-submenu {
 }
 #header .quote-button span {
   line-height: 1;
-  margin-top: 0.625rem;
+  /* margin-top: 0.625rem; */
   letter-spacing: -0.7px;
 }
 #header .quote-button:hover,
