@@ -12,7 +12,7 @@
 .card__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 10px;
   justify-content: center;
   width: 100%;
   max-width: 90%;
@@ -28,7 +28,7 @@
 
   font-family: inherit;
   height: 600px;
-  width: 400px;
+  width: 350px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@
   gap: 10px;
 }
 .card__bx .card__data h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--dark-alt-color);
   transition: var(--transition);

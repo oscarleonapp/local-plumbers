@@ -6569,16 +6569,27 @@ ul#secondary-menu ul.is-dropdown-submenu {
 }
 #header .quote-button {
   float: right;
-  height: 36px;
+  height: 50px;
   width: 100px;
-  padding: 0 0 10px 0;
+  /* padding: 0 0 10px 0; */
   margin-right: 6px;
 }
-@media screen and (min-width: 6.25rem) and (max-width: 63.9375rem) {
+@media screen and (min-width: 950px) and (max-width: 1250px) {
   #header .quote-button {
-    float: left;
-    margin: 0;
-    display: none;
+    float: right;
+    height: 40px;
+    width: 100px;
+    padding: 0 0 10px 0;
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #header .quote-button {
+    float: right;
+    height: 30px;
+    width: 100px;
+    /* padding: 0 0 10px 0; */
     margin-right: 6px;
   }
 }
@@ -6602,14 +6613,14 @@ ul#secondary-menu ul.is-dropdown-submenu {
 .servicios-container {
   /* width: 100%; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-content: center;
 }
 
 .item-card {
   background-color: #0ba7eb;
-  width: 250px;
+  width: 200px;
   height: 70px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -6618,4 +6629,10 @@ ul#secondary-menu ul.is-dropdown-submenu {
   margin-bottom: 20px;
   border: #0c4d78 solid 1px;
   border-radius: 5px;
+}
+
+.btn-marca-color {
+  color: orange;
+  font-weight: 700;
+  text-decoration: underline;
 }
