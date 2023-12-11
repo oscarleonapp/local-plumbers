@@ -217,7 +217,8 @@ a:hover {
 
 .position-nav-fixed {
   position: fixed;
-  z-index: 9999;
+  z-index: 9;
+  height: 50px;
 }
 
 .background-color-nav {
@@ -507,13 +508,52 @@ strong {
   HERO              
 -----------------------------------------*/
 .hero {
-  margin-top: -25px;
+  margin-top: -75px;
   position: relative;
   overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
   .hero {
+    margin-top: -100px;
+    height: 100vh;
+  }
+
+  .custom-video,
+  .news-detail-image {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .sticky-wrapper {
+    position: relative;
+    bottom: 76px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    margin-top: -100px;
+    height: 100vh;
+  }
+
+  .custom-video,
+  .news-detail-image {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .sticky-wrapper {
+    position: relative;
+    bottom: 76px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .hero {
+    margin-top: -100px;
     height: 100vh;
   }
 

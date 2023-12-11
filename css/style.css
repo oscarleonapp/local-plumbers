@@ -10356,3 +10356,23 @@ h6,
 a:hover {
   text-decoration: none;
 }
+
+/* NEW RSS BTNS */
+.rss-container-btns {
+  background-color: #000;
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.rss-container-btns li {
+  list-style: none;
+}
+
+.rss-container-btns div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
