@@ -10376,3 +10376,7 @@ a:hover {
   justify-content: center;
   align-self: center;
 }
+
+.footer-top {
+  margin-left: 130px;
+}
