@@ -551,7 +551,7 @@ body {
 
 .creditos_footer {
   font-family: "myriad-pro-semi-condensed", sans-serif;
-  color: #14355b;
+  color: #2c2f32;
   font-size: 13px;
   line-height: 26px;
   font-weight: 700;
@@ -561,9 +561,9 @@ body {
 
 .oscarleon {
   /* color: #5fe79c; */
-  color: #14355b;
+  color: #5e6f82;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .jc_cont_logos_finan {
