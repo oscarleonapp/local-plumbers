@@ -1316,10 +1316,10 @@ body {
   position: fixed;
   right: 2%;
   bottom: 2%;
-  background-image: url("../source/img/iconos/whatsappicon.png");
+  background-image: url("../../img/servicios/back.png");
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: 35px;
+  background-size: 50px;
   /* box-shadow: 0px 0px 3px rgb(0 0 0 / 13%); */
   z-index: 1;
   transition: background-color 0.2s;
