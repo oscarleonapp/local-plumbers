@@ -106,10 +106,23 @@ root {
   /* border-bottom: 1px solid #eff2f7; */
 }
 
-.c-nombre .nombre {
+.nombre {
+  color: #b24700;
   justify-self: center;
   grid-area: nombre;
-  color: #ff6600;
+}
+
+.fecha {
+  color: #524f4c;
+  justify-self: center;
+  grid-area: nombre;
+  font-size: 14px;
+}
+
+.c-nombre {
+  justify-self: center;
+  grid-area: nombre;
+  color: #3c3835;
 }
 
 .c-nombre .nombre span {
@@ -516,9 +529,9 @@ root {
 }
 
 .link-breadcrumb:hover {
-  background-color: #008ce6;
+  background-color: #ff6600;
   color: #fff;
-  border: 1px solid #008ce6;
+  border: 1px solid #ff6600;
 }
 
 .left-interna {
@@ -654,7 +667,7 @@ root {
   /* -webkit-justify-content: space-between; */
   -ms-flex-pack: center;
   justify-content: space-between;
-  border-bottom: 1px solid #77838f;
+  /* border-bottom: 1px solid #77838f; */
   /* background-color: #fff; */
   /* border-radius: 10px 10px 10px 10px; */
 }
@@ -663,8 +676,8 @@ root {
   margin-right: 5px;
   font-family: "myriad-pro-semi-condensed", sans-serif;
   color: #001e32;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .datos-info {
@@ -677,7 +690,7 @@ root {
 }
 
 .col-info-inter .datos-info {
-  text-align: right;
+  text-align: justify;
 }
 
 .datos-info.datos-info--upper {
@@ -987,7 +1000,7 @@ root {
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 30px;
-  background-color: #001e32;
+  background-color: #ff6600;
   font-family: "myriad-pro-semi-condensed", sans-serif;
   color: #fff;
   font-size: 16px;
