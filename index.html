@@ -69,11 +69,25 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
     <!-- CARDS PRODUCTS -->
 
+    <!-- CUPON -->
+    <link rel="stylesheet" href="blog/css/libraries/cupon.css">
+
 
 
 </head>
 
 <body>
+    <!-- PRUEBA MODAL -->
+    <div id="cupon-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¡Cupón de descuento!</h2>
+            <p>Usa el código <strong id="cupon-code">DESCUENTO2024</strong> y obtén un descuento del 10%.</p>
+            <div id="countdown">Tiempo restante: <span id="timer">10:00</span></div>
+            <button id="tomar-cupon">Tomar Cupón</button>
+        </div>
+    </div>
+    <!-- END PRUEBA MODAL -->
     <!-- HEADER TOP -->
     <div class="rss-container-btns">
         <div>
@@ -172,7 +186,7 @@
                                     </li>
                                     <li id="menu-item-10372"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10372"
-                                        role="menuitem"><a href="tel:855-505-6225">Coupons</a></li>
+                                        role="menuitem"><a id="mostrar-cupon">Coupons</a></li>
 
                                 </ul>
                             </nav><!-- /#top-menu -->
@@ -778,6 +792,10 @@
         </section>
 
     </section>
+
+
+
+
     <!-- CARDS-PRODUCTS -->
 
 
@@ -2125,7 +2143,12 @@
     </script>
 
     <script async
-        src="https://online-booking.housecallpro.com/script.js?token=0c3af1c3f7dd496b95de2907ab5ccf4f&orgName=Local-Plumbers"> </script>
+        src="https://online-booking.housecallpro.com/script.js?token=0c3af1c3f7dd496b95de2907ab5ccf4f&orgName=Local-Plumbers">
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="blog/js/cupon.js"></script>
+
 
 </body>
 
