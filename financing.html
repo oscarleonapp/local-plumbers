@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .section-code-example {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: hidden;
+            padding: 80px 6vw;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-family: Montserrat, sans-serif;
+            color: #31364c;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 400;
+        }
+
+        .iphone-img-code-example {
+            width: 40%;
+            max-width: 437px;
+        }
+
+        .box-code-example {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            max-width: 55%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        .container-code-example {
+            z-index: 1;
+            width: 100%;
+            max-width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .margin-bot-24-code-example {
+            margin-bottom: 24px;
+        }
+
+        .paragraph-code-example {
+            margin-bottom: 20px;
+            font-family: Montserrat, sans-serif;
+            color: #31364c;
+            font-size: 12px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .margin-bot-32-code-example {
+            margin-bottom: 32px;
+        }
+
+        .btn-code-example {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 12px 32px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 2px;
+            background-color: #0c4e9e;
+            -webkit-transition: all 250ms cubic-bezier(.25, .46, .45, .94);
+            transition: all 250ms cubic-bezier(.25, .46, .45, .94);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .btn-code-example:hover {
+            -webkit-transform: translate(0px, -5px);
+            -ms-transform: translate(0px, -5px);
+            transform: translate(0px, -5px);
+        }
+
+        .content-code-example-1 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+        }
+
+        .link-blue {
+            color: #156ed7;
+            font-weight: 600;
+        }
+
+        .title-code-example {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 50px;
+            line-height: 140%;
+        }
+
+        .list-code-example {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            grid-row-gap: 8px;
+            font-size: 18px;
+        }
+
+        .paragraph-code-example-lg {
+            margin-bottom: 0px;
+            font-family: Montserrat, sans-serif;
+            color: #31364c;
+            font-size: 18px;
+            line-height: 150%;
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 991px) {
+            .iphone-img-code-example {
+                top: auto;
+                bottom: 0px;
+            }
+
+            .title-code-example {
+                font-size: 32px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .iphone-img-code-example {
+                width: 60%;
+            }
+
+            .box-code-example {
+                max-width: 100%;
+            }
+
+            .paragraph-code-example {
+                font-size: 16px;
+            }
+
+            .btn-code-example {
+                font-size: 12px;
+            }
+
+            .content-code-example-1 {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                -webkit-flex-direction: column-reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+                grid-row-gap: 20px;
+            }
+
+            .title-code-example {
+                font-size: 26px;
+            }
+
+            .paragraph-code-example-lg {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            .section-code-example {
+                padding: 60px 16px;
+            }
+
+            .iphone-img-code-example {
+                position: relative;
+                left: 0px;
+                display: block;
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .box-code-example {
+                width: 100%;
+                max-width: none;
+                min-width: 100%;
+            }
+
+            .container-code-example {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            .btn-code-example {
+                width: 100%;
+                min-width: 0px;
+            }
+
+            .title-code-example {
+                font-size: 24px;
+            }
+        }
+    </style>
+
+
+
+    <div class="section-code-example wf-section">
+        <div class="container-code-example">
+            <div class="content-code-example-1">
+                <div class="box-code-example">
+                    <div class="margin-bot-24-code-example">
+                        <h2 class="title-code-example">We offer financing <br> </h2>
+                    </div>
+                    <div class="margin-bot-24-code-example">
+                        <p class="paragraph-code-example-lg">We’ve partnered with <a href="https://www.wisetack.com/"
+                                target="_blank" class="link-blue">Wisetack </a> to offer our customers flexible
+                            financing options, so you can pay over time rather than all at once. The application takes
+                            about a minute to complete, and checking your options does not impact your credit score.
+                        </p>
+                    </div>
+                    <div class="margin-bot-32-code-example">
+                        <ul role="list" class="list-code-example">
+                            <li class="list-item-code-example">Finance projects up to $25,000*</li>
+                            <li class="list-item-code-example">Terms from 3 to 60 months*</li>
+                            <li class="list-item-code-example">APRs range from 0 to 35.9%*</li>
+                            <li class="list-item-code-example">No hidden fees or compounding interest</li>
+                        </ul>
+                    </div>
+                    <div class="margin-bot-32-code-example">
+                        <p class="paragraph-code-example-lg">
+                            <a href="#" class="link-blue">Prequalify today</a> with no impact to your credit and contact
+                            us to learn about financing your next project!
+                        </p>
+                    </div>
+                    <div class="margin-bot-32-code-example">
+                        <a href="#" class="btn-code-example w-button">PREQUALIFY NOW </a>
+                    </div>
+                    <p class="paragraph-code-example">*All financing is subject to credit approval. Your terms may vary.
+                        Payment options through Wisetack are provided by our lending partners. For example, a $1,200
+                        purchase could cost $104.89 a month for 12 months, based on an 8.9% APR, or $400 a month for 3
+                        months, based on a 0% APR. Offers range from 0-35.9% APR based on creditworthiness. No other
+                        financing charges or participation fees. See additional terms at http://wisetack.com/faqs."
+                        target="_blank" class="link-blue">http://wisetack.com/faqs</a>.</p>
+                </div><img
+                    src="https://assets.website-files.com/5f194315e6b47c1697925302/63ff515202d8072e4de31a7c_offers-mockup%402x%201%20(1)%20(1).png"
+                    loading="lazy" width="496" alt="" class="iphone-img-code-example">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
